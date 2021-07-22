@@ -1,0 +1,1452 @@
+
+   /*List of fonts used in this web page*/
+@font-face{                                                    
+    font-family: "Raleway-Regular"; 
+    src: url("polices/Raleway-Regular.ttf") format("truetype");
+  
+    font-weight: normal;
+    font-style: normal;                                                             
+} 
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+header,main
+{
+    margin: 0 40px; /*marge sur les côtés*/
+ 
+}
+
+body
+{
+    
+    font-family: "Raleway-Regular", Verdana, sans-serif; /* utilisation des polices sur la totalité de la page */
+    font-size: 100%; /* nota bene 100% = 16px  - Ailleurs mettre combien de rem - par ex au lieu de 32px mettre 2rem */
+
+}
+
+.title1
+{
+    margin-top: 40px;
+}
+
+.navhebergements
+{
+    color: black;
+    text-decoration: none;
+    padding: 20px 0px;
+    margin-right: 20px;
+    border-top: solid 2px white;
+    transition: .2s ease-in-out;
+    
+}
+
+.navhebergements:hover
+{
+    border-top: solid 2px #0065fc;
+    color: #0065fc;
+}
+
+
+.navactivites
+{
+    color: black;
+    text-decoration: none;
+    padding: 20px 0px;
+    margin-right: 20px;
+    border-top: solid 2px white;
+    transition: .2s ease-in-out;
+}
+
+.navactivites:hover
+{
+    border-top: solid 2px #0065fc;
+    color: #0065fc;
+}
+
+.navinscrire
+{
+    color:#0065fc; 
+    text-decoration: none;
+    padding: 20px 0px;
+    margin-right: 20px;
+    border-top: solid 2px white;
+    transition: .2s ease-in-out;
+
+}
+
+.navinscrire:hover
+{
+    border-top: solid 2px #0065fc;
+    font-weight: bold;
+}
+
+.filters
+{
+    display: flex;
+
+}
+
+.filtre
+{
+    margin-top: 22px;
+    margin-right: 20px;
+}
+
+.filtres i
+{
+    
+    background-color: rgba(0, 65, 232, 0.1);
+    border-radius: 50px;
+    padding: 15px;
+    color: #0065fc;
+    transition: .2s ease-in-out;
+}
+
+#child
+{
+    padding: 15px 17px 15px 17px;
+}
+
+.filtres i:hover
+{
+    transform: scale(1.2);
+}
+
+.filtres
+{ 
+    text-decoration: none;
+    border: 2px solid;
+    border-color: #f2f2f2;
+    padding: 0px 10px 0px 0px;
+    border-radius: 30px;
+    float: left;
+    margin: 10px;
+
+}
+ .filtre-text
+ {
+     padding: 0 10px;
+ }
+
+.filtre-text:hover
+{
+    color: #0065fc;
+}
+
+
+a 
+{
+    color: black;
+    text-decoration: none;
+}
+  
+a:hover 
+{
+    text-decoration:blink;
+}
+
+
+h1
+{
+font-size: 20px;
+}
+
+
+
+h3
+{
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.searchbar
+{
+    width: 375px;
+    
+}
+
+.marker 
+{
+    background-color: #F2F2F2;
+    border-radius: 12px 0px 0px 12px;
+    padding: 12px 12px 12px 20px;
+   
+}
+
+#pholder
+{
+    width: 170px;
+    min-width: 50px;
+    height: 42px;
+    padding-left: 15px;
+    text-align: center;
+    margin-top: 1px;
+    font-size: 1.1em;
+    padding: 13px;
+    font-weight: bold;
+    border: none;
+    border-top: 2px solid #f2f2f2;
+    border-bottom: 2px solid #f2f2f2;
+    position: relative;
+   right: 6px;
+}
+    
+
+.searchbtn
+{
+    text-decoration: none;
+    padding: 12px 12px 12px 15px;
+    background-color: #0065FC;
+    color: white;
+    cursor: pointer;
+    border: none;
+    width: 170px;
+    min-width: 50px;
+    font-size: 15px;
+    border-radius: 0 12px 12px 0;
+    position: relative;
+    right: 15px;
+    
+}
+
+#magnifying
+{
+    display: none;
+}
+
+
+::placeholder
+{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.loge
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.loge i
+{
+    color: #0065FC;
+height: 20px;
+width: 20px;
+border:3px solid #f2f2f2;
+text-align:center;
+border-radius:35px;
+padding:8px 6px 4px 6px;
+}
+
+
+.loge p
+{
+margin-left: 10px;
+font-weight: 100;
+}
+
+.container
+{
+    display: flex;
+}
+
+.lodg-title
+{
+    font-size: 1.0em;
+}
+
+.lodging-container
+{
+    background-color: rgb(242, 242, 242);
+    border-radius: 10px;
+    padding: 15px 20px 10px 20px;
+    width: 75%;
+    height: 650px; 
+    
+}
+
+.lodging-wrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content:space-around;
+}
+
+.lodging
+{
+    width: 25%;
+    height: 250px;
+    background: white;
+    border-radius: 15px;
+    padding: 5px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+    margin: 0px 40px 25px 40px;
+}
+
+.lodging:hover
+{
+    transform: scale(1.1);
+  
+}
+
+
+.lodging-img
+{
+    width: 100%;
+    object-fit: cover;
+    height: 170px;
+    border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
+    display:flex;
+    justify-content: space-around;
+}
+
+.btn
+{
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.blue
+{
+    color:#0065FC ;
+    font-size: 10px;
+    
+}
+.grey
+{
+    color: #f2f2f2;
+    font-size: 10px;
+    
+}
+.stars
+{
+    margin: 65px;
+}
+
+.stars1
+{
+    margin: 45px;
+}
+
+.popular-title
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.populaire i.fa-chart-line 
+{
+        color: black;
+}
+
+#populaires
+{
+    display:flex;
+    width: 41%;
+    height: 143px;
+    border-radius:15px 0px 0px 15px;
+    flex-grow:1;
+    float:left;
+    padding-right: 20px;
+    
+}   
+
+.populaire 
+{
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border-radius: 10px;
+    padding: 15px 20px 10px 20px ;
+    width: 25%;
+    height: 650px;
+    margin-left: 60px;
+    align-items: center;
+    justify-content: space-between;   
+
+    
+}
+
+.popular
+{
+    width: 98%;
+    height: 24%;
+    background: white;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    padding: 2px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.popular:hover
+{
+  
+    transform: scale(1.1);
+}
+
+.activities
+{
+    margin-top: 50px;
+}
+
+.moyen_grand
+{
+
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-radius: 10px;
+    margin: 20px 0px 0px 0px;
+    justify-content: space-evenly;   
+    cursor: pointer;   
+}
+
+.grand
+{
+display:flex;
+width:290px;
+height: 400px;
+cursor: pointer;
+transition: .2s ease-in-out;
+}
+
+.grand:hover
+{
+    transform: scale(1.05);
+}
+
+
+.moyen
+{
+flex-direction: column;
+display:flex;
+justify-content: space-between;
+cursor: pointer;
+
+}
+
+.medium
+{
+    width:290px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.medium:hover
+{
+    transform: scale(1.05);
+}
+
+.legende
+{
+    text-align: inherit;
+    padding: 10px;
+}
+
+.legende2
+{
+   border: 2px solid #f2f2f2;
+   border-radius: 0px 0px 10px 10px;
+   padding:  15px ;
+   box-shadow: 5px 5px 3px #f2f2f2;
+}
+
+
+.pomegues
+{
+  
+   object-fit: cover;
+   width: 100%;
+   height: 190px;
+   border-radius: 10px 10px 0px 0px;
+   position: relative;
+    top: 10px;
+    
+}
+
+
+.vieux
+{
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 10px;
+}
+
+
+.frioul
+{
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 110px;
+    position: relative;
+    top: 10px;
+    object-fit: cover;
+   margin-top: 40px;
+    
+}
+
+.national
+{
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 10px;
+  
+}
+
+.notre_dame
+{
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 120px;  
+    position: relative;
+    top: 10px;
+}
+
+
+
+.longchamps
+{
+    object-fit: cover;
+    width: 100%;
+    height: 190px;
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+    top: 10px;
+}
+
+.contenant
+{
+   background-color: rgb(242, 242, 242);
+   display: flex;
+   justify-content:space-between;
+   list-style-type: none;
+   margin-top: 100px;
+    width: 100%;
+    right: 44px;
+
+}
+
+.a_propos
+{
+    
+   margin-left: 50px;
+   margin-top: 20px;
+}
+
+
+.nos_hebergements
+{
+    margin-top: 20px;
+}
+
+.assistance
+{  
+    margin-left: 50px;
+    margin-top: 20px;
+    
+}
+
+footer ul
+{
+    width: 340px;
+    margin-bottom: 20px;
+    list-style-type: none;
+    padding:0px;
+
+}
+
+
+  
+
+
+
+@media screen and (max-width: 1024px) {
+ 
+#bloc_page
+{
+    width: auto;   
+}
+
+body
+{
+    margin:0;
+    padding:0;
+    margin: 0px 34px 0px 20px;
+}
+header 
+{
+    margin-left: 30px;
+}
+
+.navhebergements 
+{
+     font-size: 0.9em;
+} 
+ 
+.navactivites 
+{
+    font-size: 0.9em;
+}
+
+.navinscrire 
+{
+    font-size: 0.9em;
+}
+
+.marker
+{
+    margin-left: 30px;
+
+}
+
+
+
+.filtre 
+{
+   font-size: 0.9em;
+   margin-left: 30px;
+
+}
+
+
+
+.filtres i 
+{
+    font-size: 0.8em;
+}
+
+.filtres
+{
+    border: 1px solid;
+    border-color: #f2f2f2;
+}
+
+.filtre-text {
+    padding: 0px;
+    font-size: 0.8em;
+}
+
+h3
+{
+    font-size: 14px;
+    font-weight: 100;
+    font-size: 0.8em; 
+    margin-left: 30px;
+}
+
+.loge i 
+{
+    color: #0065FC;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #f2f2f2;
+    text-align: center;
+    border-radius: 31px;
+    padding: 4px 4px 4px 4px;
+    margin-left: 30px;  
+}
+
+    .loge p 
+{
+    margin-left: 10px;
+    font-weight: 100;
+    font-size: 0.8em;
+}    
+
+
+.container
+{
+    display: flex;
+    margin-left: 15px;
+
+}
+
+.lodging-wrapper:nth-child(1)
+{
+    order: 2;
+
+}
+
+.lodging:nth-child(2)
+{
+    order: 1;
+}
+
+.lodging-container
+{
+    border-radius: 10px;
+    padding: 15px 20px 10px 20px;
+    width: 75%;
+    height: 554px;
+    
+}
+h1 
+{
+    font-size: 1.0em;
+    margin-left: 30px;
+}
+
+.lodging-wrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+
+.btn {
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+.lodging
+{
+    width: 35%;
+    height: 129px;
+    background: white;
+    border-radius: 15px;
+    padding: 3px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+    margin: 0px 15px 21px 15px;
+    font-size: 0.8em;
+}
+
+
+.lodging:hover
+{
+    transform: scale(1.1);
+  
+}
+
+
+.lodging-img
+{
+    width: 100%;
+    object-fit: cover;
+    height: 70px;
+    border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+}
+
+.popular-title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.0em;
+}
+
+#populaires
+{
+   display:flex;
+   width: 46%;
+   height: 100px;
+   border-radius:15px 0px 0px 15px;
+   flex-grow:1;
+   float:left;
+   padding-right: 10px;
+   
+}   
+
+.populaire 
+{
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border-radius: 10px;
+    padding: 15px 20px 10px 20px;
+    width: 43%;
+    height: 554px;
+    margin-left: 40px;
+    align-items: center;
+    justify-content: space-between;
+
+   
+}
+
+.popular
+{
+   width: 98%;
+   height: 25%;
+   background: white;
+   border-radius: 15px;
+   margin-bottom: 10px;
+   transition: .2s ease-in-out;
+   cursor: pointer;
+   font-size: 0.8em;
+}
+
+.stars
+{
+    margin: 14px;
+}
+
+.stars1
+{
+    margin: -1px;
+}
+
+.activities
+{
+    margin-top: 25px;
+}
+
+
+.moyen_grand {
+    
+    width: 100%;
+    height: 392px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px 0px 0px 10px;
+    flex-direction: column;
+}
+
+.grand 
+{
+    display: flex;
+    width: 25%;
+    height: 77%;
+
+}
+
+.vieux 
+{
+    width: 98%;
+    height: 100%;
+    
+    top: 10px;
+}
+
+.national {
+
+    width: 98%;
+    height: 100%;
+    
+}
+
+.moyen 
+{
+    justify-content: flex-start;
+    width: 25%;
+    height: 77%;
+}
+
+
+.medium 
+{
+    width: 187px;
+    height: 53%;
+    
+}
+
+.pomegues
+{
+  
+   
+    width: 99%;
+    height: 114px;
+    
+}
+
+.frioul
+{
+    width: 99%;
+    height: 80px;
+    margin-top: 0px;
+}
+
+.notre_dame
+{
+
+    width: 99%;
+    height: 80px;  
+    
+}
+
+.longchamps
+{
+    width: 99%;
+    height: 100px;
+    margin-top: 0px;
+}
+
+.legende2 
+{
+    border: 2px solid #f2f2f2;
+    border-radius: 0px 0px 10px 10px;
+    padding: 8px;
+    box-shadow: 5px 5px 3px #f2f2f2;
+}
+
+
+
+.contenant 
+{
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin-top: 50px;
+    width: 100%;
+}
+ 
+h2
+{
+    font-size: 1.0em;
+}
+
+footer ul {
+    width: 340px;
+    margin-bottom: 20px;
+    list-style-type: none;
+    padding: 0px;
+    font-size: 0.8em;
+}
+
+.assistance
+{
+    align-items: center;
+}
+
+/*.nos_hebergements
+{
+    
+}*/
+
+/*.a_propos
+{
+
+}*/
+
+
+}
+
+ @media screen and (max-width: 480px) {
+#bloc_page
+{
+        width: auto;   
+}
+    
+body
+{
+       margin: 0px;
+}
+header, main {
+    margin: 0 40px;
+}
+
+header 
+{
+        font-size: 0.7em;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;   
+        width: 58%;
+        margin-top: 20px; 
+    }
+
+nav
+{
+  display: flex;
+}
+
+
+/*.Reservia
+{
+  
+    
+}*/
+
+.navhebergements 
+{
+    font-size: 1.6em;
+    width: auto;
+    position: absolute;
+    top: 7%;
+    left:0%;
+    padding: 20px 62px 7px 54px;
+    border-bottom: solid 3px #f2f2f2;
+}
+     
+.navactivites 
+{
+    font-size: 1.6em;
+    width: auto;
+    position: absolute;
+    top: 7%;
+    padding: 20px 96px 7px 74px;
+    left: 50%;
+    border-bottom: solid 3px #f2f2f2;
+}
+
+.navinscrire 
+{
+    font-size: 1.8em;
+    width: 45%;
+    font-weight: bold;
+    position: relative;
+    bottom: 9px;
+    left: 128%;
+    
+}
+ 
+.navhebergements:hover
+{
+    border-top: solid 2px white;
+    border-bottom: solid 3px #0065fc;
+}
+
+.navactivites:hover
+{
+    border-top: solid 2px white;
+    border-bottom: solid 3px #0065fc;
+    
+}
+
+nav :nth-child(1)
+{
+    order: 1;
+}
+
+nav :nth-child(2)
+{
+    order: 3;
+}
+
+nav :nth-child(3)
+{
+    order: 4;
+}
+
+nav :nth-child(4)
+{
+    order: 2;
+}
+.marker
+{
+        margin-left: 22px;
+        font-size: 1.0em;
+        padding: 10px 20px 13px 20px;
+    
+}
+     
+.searchbtn
+{
+  display: none;
+
+}
+
+#magnifying
+{
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 15px 14px 15px;
+    background-color: #0065FC;
+    color: white;
+    border: none;
+    width: 20px;
+    min-width: 20px;
+    font-size: 15px;
+    border-radius: 0 12px 12px 0;
+    position: relative;
+    right: 15px;
+}
+
+
+#pholder
+{
+    font-size: 0.6em;
+}
+
+.title1
+{
+    font-size: 1.6em;
+    margin-left: 20px;
+}
+
+.filtre 
+{
+    font-size: 1.2em;
+    width: 52%;
+    margin-left: 20px;
+    
+}
+    
+.filters
+{
+    flex-wrap: wrap;
+    width: 320px;
+} 
+    
+.filtres i 
+{
+        
+        font-size: 0.8em;
+        padding: 10px;
+}
+    
+.filtres
+{
+        border: 2px solid;
+        border-color: #f2f2f2;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-left: 20px;
+}
+    
+.filtre-text 
+{
+    padding:  0px 0px 0px 5px;
+        
+}
+ 
+#child {
+    padding: 10px 12px 10px 12px;
+}
+
+
+h3
+{
+        font-weight: 100;
+        font-size: 1.0em; 
+        margin-left: 20px;
+}
+    
+.loge i 
+{
+    margin-left: 20px;
+}
+    
+.loge p 
+{
+        margin-left: 9px;
+        font-weight: 100;
+        font-size: 0.9em;
+}    
+    
+    
+.container
+{
+    display: flex;
+    margin-left: 0px;
+    flex-wrap: wrap-reverse;
+    position: relative;
+    width: 110%;
+    right: 44px;
+
+}
+.lodg-title
+ {
+     font-size: 1.0em;
+     margin-left: 20px;
+ }   
+.lodging-wrapper:nth-child(1)
+ {
+    order: 2;
+    
+}
+    
+.lodging:nth-child(2)
+{
+    order: 1;
+}
+    
+.lodging-container
+{
+    border-radius: 10px;
+    padding: 4px 20px 10px 20px;
+    width: 75%;
+    height: 400px; 
+    background-color: white;
+    margin-bottom: 750px;
+}
+    
+.lodging-wrapper
+{
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     padding: 10px;
+     
+}
+    
+.btn 
+{
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-left: 60px;
+}
+
+    
+.lodging
+{
+    width: 102%;
+    height: 150px;
+    margin-left: 50px;
+    border: 2px solid #f2f2f2;
+    box-shadow: 0px 3px 3px #f2f2f2;
+
+}
+    
+.lodging:hover
+{
+    transform: scale(1.1);
+      
+}
+    
+    
+.lodging-img
+{
+     width: 100%;
+    height: 93px;
+  
+}
+    
+    .popular-title {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        font-size: 1.0em;
+    }
+    
+    #populaires
+    {
+        display: flex;
+        width: 32%;
+        height: 103px;
+       
+    }   
+    
+    .populaire 
+    {
+       background-color: rgb(242, 242, 242);
+       display: flex;
+       flex-direction: column;
+       flex-grow: 1;
+       border-radius: 0px;
+       padding: 15px 20px 10px 20px ;
+       width: 25%;
+       height: 400px;
+       margin-left: 40px;
+       align-items: center;
+       justify-content: space-between;   
+    
+       
+    }
+    
+    .popular
+    {
+       width: 85%;
+       height: 26%;
+       background: white;
+       border-radius: 15px;
+       margin-bottom: 10px;
+       transition: .2s ease-in-out;
+       cursor: pointer;
+       font-size: 0.8em;
+    }
+    
+    .stars
+    {
+        margin: 14px;
+    }
+    
+    .stars1
+    {
+        margin: -1px;
+    }
+    
+    .activities
+    {
+        margin-top: 60px;
+    }
+
+
+    .moyen_grand {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap:nowrap;
+        margin: 0px 0px 0px 10px;
+        flex-direction: column;
+        align-items: center;
+        float: right;
+        margin-bottom: 50px;
+    }
+
+    .grand 
+    {
+        display: flex;
+        width: 99%;
+        height: 8em;
+        margin-bottom:51px;
+    }
+
+    .vieux 
+    {
+        width: 100%;
+        height: 110px;
+        top: 4px;
+    }
+
+    .national {
+
+        width: 100%;
+        height: 110px;
+        top: 4px;
+    }
+
+    .moyen 
+    {
+        align-items: center;
+    }
+
+
+    .medium 
+    {
+        width: 82%;
+        height: 8em;
+        margin-bottom:34px;
+
+    }
+
+    .pomegues
+    {
+        width: 100%;
+        height: 110px;
+        margin-top: 0px;
+        top: 4px;
+    }
+
+    .frioul
+    {
+        width: 100%;
+        height: 110px;
+        margin-top: 0px;
+        top: 4px;
+    }
+
+    .notre_dame
+    {
+
+        width: 100%;
+        height: 110px;
+        margin-top: 0px;
+        top: 4px;
+    }
+
+    .longchamps
+    {
+        width: 100%;
+        height: 110px;
+        margin-top: 0px;
+        top: 4px;
+    }
+
+    .legende2 
+    {
+        border: 2px solid #f2f2f2;
+        border-radius: 0px 0px 10px 10px;
+        padding: 14px 8px 14px 8px;
+        box-shadow: 0px 5px 3px #f2f2f2;
+        width: 95.4%;
+    }
+    
+    
+    .contenant 
+    {
+        display: flex;
+    margin-top: 0px;
+    font-size: 1.1em;
+    flex-direction: column;
+    width: 100%;
+        
+    }
+     
+    h2
+    {
+        font-size: 1.0em;
+    }
+    
+    footer ul {
+        width: 340px;
+        margin-bottom: 20px;
+        list-style-type: none;
+        padding: 0px;
+        font-size: 0.8em;
+    }
+    
+    .assistance
+    {
+        align-items: center;
+        margin-left: 64px;
+    }
+    
+
+    .a_propos
+    {
+        
+        width: 30%;
+       margin-left: 64px;
+       margin-top: 20px;
+    }
+    
+    
+    .nos_hebergements
+    {
+        width: 30%;
+        margin-top: 20px;
+        margin-left: 64px;
+    }
+    
+    footer
+   {
+       margin-right: 0px;
+   } 
+
+
+    /*.nos_hebergements
+    {
+        
+    }*/
+    
+    /*.a_propos
+    {
+    
+    }*/
+    
+      
+
+  }
