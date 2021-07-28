@@ -28,6 +28,7 @@ body {
 }
 
 .navlodging {
+  /* Nav bar */
   color: black;
   text-decoration: none;
   padding: 20px 0px;
@@ -66,10 +67,11 @@ body {
 
 .navlogin:hover {
   border-top: solid 2px #0065fc;
-  font-weight: bold;
+  font-weight: bold; /* end of Nav bar*/
 }
 
 .filters_container {
+  /* Filters section*/
   display: flex;
 }
 
@@ -87,6 +89,7 @@ body {
 }
 
 #child {
+  /* This icon didn't make a circle so it has its own padding*/
   padding: 15px 17px;
 }
 
@@ -277,20 +280,6 @@ h3 {
   width: 100%;
 }
 
-.popular-container i.fa-chart-line {
-  color: black;
-}
-
-.popular-img {
-  display: flex;
-  width: 41%;
-  height: 143px;
-  border-radius: 15px 0px 0px 15px;
-  flex-grow: 1;
-  float: left;
-  padding-right: 20px;
-}
-
 .popular-container {
   background-color: rgb(242, 242, 242);
   display: flex;
@@ -303,6 +292,10 @@ h3 {
   margin-left: 60px;
   align-items: center;
   justify-content: space-between;
+}
+
+.popular-container i.fa-chart-line {
+  color: black;
 }
 
 .popular-article {
@@ -318,6 +311,16 @@ h3 {
 
 .popular-article:hover {
   transform: scale(1.1);
+}
+
+.popular-img {
+  display: flex;
+  width: 41%;
+  height: 143px;
+  border-radius: 15px 0px 0px 15px;
+  flex-grow: 1;
+  float: left;
+  padding-right: 20px;
 }
 
 .activities {
@@ -467,7 +470,7 @@ footer ul {
   }
 
   body {
-    margin: 0;
+    margin: 0px;
   }
   header,
   main {
