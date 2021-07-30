@@ -28,7 +28,7 @@ body {
 }
 
 .title1 {
-  margin-top: 0px;
+  margin-top: 40px;
 }
 
 .navlodging {
@@ -874,6 +874,7 @@ footer ul {
   .title1 {
     font-size: 1.6em;
     margin-left: 20px;
+    margin-top: 0px;
   }
 
   .filters_title {
