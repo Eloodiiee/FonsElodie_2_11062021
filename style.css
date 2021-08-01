@@ -15,12 +15,13 @@ header {
 
 header,
 main {
-  margin: 0 40px; /*marge sur les côtés*/
+  margin: 0px 40px; /*marge sur les côtés*/
 }
 
 body {
   font-family: "Raleway-Regular", Verdana, sans-serif; /* utilisation des polices sur la totalité de la page */
   font-size: 100%; /* nota bene 100% = 16px  - Ailleurs mettre combien de rem - par ex au lieu de 32px mettre 2rem */
+  margin: 0px;
 }
 
 #Reservia {
@@ -155,7 +156,6 @@ h3 {
   margin-top: 1px;
   font-size: 1.1em;
   padding: 13px;
-  font-weight: bold;
   border: none;
   border-top: 2px solid #f2f2f2;
   border-bottom: 2px solid #f2f2f2;
@@ -441,28 +441,30 @@ h3 {
 .footer-container {
   background-color: rgb(242, 242, 242);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   list-style-type: none;
   margin-top: 100px;
-  width: 100%;
+  width: 1903px;
 }
 
 .about-us {
   margin-left: 50px;
   margin-top: 20px;
+  width: 25%;
 }
 
 .lodgings {
   margin-top: 20px;
+  width: 25%;
 }
 
 .help {
   margin-left: 50px;
   margin-top: 20px;
+  width: 25%;
 }
 
 footer ul {
-  width: 340px;
   margin-bottom: 20px;
   list-style-type: none;
   padding: 0px;
@@ -478,10 +480,8 @@ footer ul {
   }
   header,
   main {
-    width: 100%;
-  }
-  header {
-    margin-left: 30px;
+    width: 944px;
+    margin: 0px 0px 0px 40px;
   }
 
   .navlodging {
@@ -497,12 +497,15 @@ footer ul {
   }
 
   .marker {
-    margin-left: 30px;
+    margin-left: 10px;
   }
-
+  #pholder {
+    font-size: 1em;
+    font-weight: 100;
+  }
   .filters_title {
     font-size: 0.9em;
-    margin-left: 30px;
+    margin-left: 14px;
   }
 
   .filters i {
@@ -510,8 +513,7 @@ footer ul {
   }
 
   .filters {
-    border: 1px solid;
-    border-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
   }
 
   .filters-text {
@@ -520,32 +522,25 @@ footer ul {
   }
 
   h3 {
-    font-size: 14px;
-    font-weight: 100;
     font-size: 0.8em;
-    margin-left: 30px;
+    margin-left: 10px;
   }
 
   .lodge i {
-    color: #0065fc;
     height: 15px;
     width: 15px;
     border: 1px solid #f2f2f2;
-    text-align: center;
     border-radius: 31px;
     padding: 4px 4px 4px 4px;
-    margin-left: 30px;
+    margin-left: 14px;
   }
 
   .lodge p {
-    margin-left: 10px;
-    font-weight: 100;
     font-size: 0.8em;
   }
 
   .container {
-    display: flex;
-    margin-left: 30px;
+    width: 944px;
   }
 
   .lodging-wrapper:nth-child(1) {
@@ -557,38 +552,25 @@ footer ul {
   }
 
   .lodging-container {
-    border-radius: 10px;
-    padding: 15px 20px 10px 20px;
-    width: 75%;
     height: 554px;
   }
   h1 {
     font-size: 1em;
-    margin-left: 30px;
+    margin-left: 6px;
   }
 
   .lodging-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
     padding: 10px;
   }
 
   .btn {
-    font-weight: 600;
-    cursor: pointer;
     font-size: 0.8em;
   }
 
   .lodging {
     width: 35%;
     height: 129px;
-    background: white;
-    border-radius: 15px;
     padding: 3px;
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
     margin: 0px 15px 21px 15px;
     font-size: 0.8em;
   }
@@ -598,13 +580,7 @@ footer ul {
   }
 
   .lodging-img {
-    width: 100%;
-    object-fit: cover;
     height: 70px;
-    border-radius: 10px 10px 0px 0px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-around;
   }
 
   .popular-title {
@@ -643,7 +619,7 @@ footer ul {
     height: 22%;
     background: white;
     border-radius: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 32px;
     transition: 0.2s ease-in-out;
     cursor: pointer;
     font-size: 0.8em;
@@ -664,37 +640,38 @@ footer ul {
   .activities-container {
     width: 100%;
     height: 392px;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    margin: 0px 0px 0px 10px;
-    flex-direction: column;
+    margin: 0px;
+  }
+  figure {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
   }
 
   .big-activities {
-    display: flex;
     width: 17%;
     height: 82%;
   }
 
   .vieux {
     width: 99%;
-    height: 100%;
     top: 5px;
   }
 
   .national {
     width: 99%;
-    height: 100%;
     top: 5px;
   }
 
   .medium-container {
     justify-content: flex-start;
-    width: 25%;
+    width: 18%;
     height: 77%;
     position: relative;
-    bottom: 26px;
+    bottom: 15px;
   }
 
   .medium-activities {
@@ -710,75 +687,64 @@ footer ul {
   .frioul {
     width: 99%;
     height: 80px;
-    margin-top: 11px;
+    margin-top: 48px;
   }
 
   .notre_dame {
-    width: 98%;
+    width: 99%;
     height: 80px;
   }
 
   .longchamps {
-    width: 98%;
+    width: 99%;
     height: 100px;
-    margin-top: 8px;
+    margin-top: 42px;
+  }
+
+  .legende {
+    font-size: 12px;
   }
 
   .legende2 {
-    border: 2px solid #f2f2f2;
-    border-radius: 0px 0px 10px 10px;
     padding: 8px;
-    box-shadow: 5px 5px 3px #f2f2f2;
   }
 
   .footer-container {
-    margin-top: 50px;
-    position: absolute;
-    left: 61px;
-    width: 100%;
+    margin-top: 60px;
+    width: 1024px;
   }
 
   h2 {
     font-size: 1em;
   }
 
-  footer ul {
-    width: 340px;
-    margin-bottom: 20px;
-    list-style-type: none;
-    padding: 0px;
-    font-size: 0.8em;
-  }
-
   .about-us {
-    width: 34%;
+    margin-left: 50px;
+    width: 33.3%;
   }
 
   .lodgings {
-    width: 33%;
+    width: 33.3%;
+    margin-left: 50px;
   }
 
   .help {
-    width: 24%;
+    width: 33.3%;
   }
 }
 
 @media screen and (max-width: 480px) {
-  body {
-    margin: 0px;
-  }
   header,
   main {
     margin: 0px;
+    width: 480px;
   }
 
   header {
     font-size: 0.7em;
-    flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start;
-    width: 58%;
     height: 133px;
+    width: 267px;
   }
 
   nav {
@@ -811,8 +777,10 @@ footer ul {
   .navlodging {
     font-size: 1.6em;
     width: auto;
-    padding: 20px 62px 7px 54px;
+    padding: 15px 62px 7px 50px;
     border-bottom: solid 3px #f2f2f2;
+    position: relative;
+    bottom: 55px;
   }
 
   .navactivities {
@@ -821,8 +789,8 @@ footer ul {
     padding: 20px 100px 7px 74px;
     border-bottom: solid 3px #f2f2f2;
     position: relative;
-    left: 240px;
-    bottom: 53px;
+    left: 236px;
+    bottom: 108px;
   }
 
   .navlogin {
@@ -830,7 +798,8 @@ footer ul {
     width: 45%;
     font-weight: bold;
     position: relative;
-    left: 234px;
+    left: 347px;
+    bottom: 53px;
   }
 
   .navlodging:hover {
@@ -866,21 +835,18 @@ footer ul {
     position: relative;
     right: 15px;
   }
-
-  #pholder {
-    font-size: 0.6em;
-  }
-
   .title1 {
     font-size: 1.6em;
     margin-left: 20px;
     margin-top: 0px;
+    width: 460px;
   }
 
   .filters_title {
     font-size: 1.2em;
     width: 52%;
     margin-left: 21px;
+    margin-top: 5px;
   }
 
   .filters_container {
@@ -913,13 +879,15 @@ footer ul {
   }
 
   h3 {
-    font-weight: 100;
     font-size: 1em;
     margin-left: 21px;
+    width: 459px;
   }
-
+  .lodge {
+    width: 465px;
+  }
   .lodge i {
-    margin-left: 20px;
+    margin-left: 15px;
   }
 
   .lodge p {
@@ -929,15 +897,11 @@ footer ul {
   }
 
   .container {
-    display: flex;
     margin-left: 0px;
     flex-wrap: wrap-reverse;
-    position: relative;
-    width: 110%;
-    right: 44px;
+    width: 480px;
   }
   .lodg-title {
-    font-size: 1em;
     margin-left: 20px;
   }
   .lodging-wrapper:nth-child(1) {
@@ -949,22 +913,15 @@ footer ul {
   }
 
   .lodging-container {
-    border-radius: 10px;
-    padding: 4px 20px 10px 20px;
-    width: 75%;
+    padding: 0px;
     height: 400px;
     background-color: white;
     margin-bottom: 750px;
   }
 
   .lodging-wrapper {
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     padding: 10px;
-    align-content: space-between;
-    position: relative;
-    left: 8px;
   }
 
   .btn {
@@ -991,10 +948,8 @@ footer ul {
   }
 
   .popular-title {
-    display: flex;
-    justify-content: space-between;
     width: 90%;
-    font-size: 1em;
+    margin-left: 20px;
   }
 
   .popular-img {
@@ -1003,14 +958,14 @@ footer ul {
   }
 
   .popular-container {
-    height: 400px;
+    height: 445px;
     margin-left: 0px;
+    padding: 0px;
   }
 
   .popular-article {
-    width: 85%;
-    height: 26%;
-    margin-left: 40px;
+    width: 75%;
+    height: 25%;
   }
 
   .stars {
@@ -1026,22 +981,18 @@ footer ul {
   }
 
   .activities-container {
-    width: 100%;
+    width: 480px;
     height: auto;
-    display: flex;
     flex-wrap: nowrap;
-    margin: 0px 0px 0px 10px;
+    margin: 0px;
     flex-direction: column;
-    align-items: center;
-    float: right;
     margin-bottom: 50px;
   }
 
   .big-activities {
-    display: flex;
-    width: 82%;
+    width: 74%;
     height: 8em;
-    margin-bottom: 31px;
+    margin-bottom: 60px;
   }
 
   .vieux {
@@ -1063,9 +1014,9 @@ footer ul {
   }
 
   .medium-activities {
-    width: 82%;
+    width: 74%;
     height: 8em;
-    margin-bottom: 34px;
+    margin-bottom: 60px;
   }
 
   .pomegues {
@@ -1097,11 +1048,8 @@ footer ul {
   }
 
   .legende2 {
-    border: 2px solid #f2f2f2;
-    border-radius: 0px 0px 10px 10px;
     padding: 14px 8px 14px 8px;
-    box-shadow: 0px 5px 3px #f2f2f2;
-    width: 95.4%;
+    width: 95%;
   }
 
   footer {
@@ -1109,37 +1057,30 @@ footer ul {
   }
 
   .footer-container {
-    display: flex;
     margin-top: 0px;
     font-size: 1.1em;
     flex-direction: column;
-    width: 100%;
-    position: relative;
-    left: 0px;
+    width: 480px;
   }
 
   footer ul {
-    width: 340px;
-    margin-bottom: 20px;
-    list-style-type: none;
-    padding: 0px;
     font-size: 0.8em;
   }
 
   .about-us {
-    width: 30%;
-    margin-left: 64px;
+    width: 40%;
+    margin-left: 20px;
     margin-top: 20px;
   }
 
   .lodgings {
-    width: 30%;
+    width: 40%;
     margin-top: 20px;
-    margin-left: 64px;
+    margin-left: 20px;
   }
 
   .help {
-    align-items: center;
-    margin-left: 64px;
+    margin-left: 20px;
+    width: 40%;
   }
 }
