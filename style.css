@@ -293,14 +293,16 @@ h3 {
 
 .popular-container {
   background-color: rgb(242, 242, 242);
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
   border-radius: 10px;
   padding: 15px 20px 10px 20px;
   width: 25%;
   height: 665px;
   margin-left: 60px;
+}
+.popular-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   align-items: center;
   justify-content: space-between;
 }
@@ -494,6 +496,14 @@ footer li {
     margin: 10px 0px 0px 40px;
   }
 
+  .Reservia {
+    width: 9%;
+  }
+
+  .title1 {
+    margin-top: 50px;
+    font-size: 1.8em;
+  }
   .navlodging {
     font-size: 1.2em;
   }
@@ -555,8 +565,12 @@ footer li {
   }
 
   h3 {
-    font-size: 1.3em;
+    font-size: 1.5em;
     margin-left: 10px;
+  }
+  .lodge {
+    margin-bottom: 30px;
+    margin-top: 10px;
   }
 
   .lodge i {
@@ -569,7 +583,7 @@ footer li {
   }
 
   .lodge p {
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
 
   .container {
@@ -585,7 +599,7 @@ footer li {
   }
 
   .lodging-container {
-    height: 520px;
+    height: 550px;
     width: 100%;
   }
   .lodg-title {
@@ -630,7 +644,7 @@ footer li {
 
   .popular-img {
     display: flex;
-    width: 42%;
+    width: 27%;
     height: 100%;
     border-radius: 15px 0px 0px 15px;
     flex-grow: 1;
@@ -640,39 +654,41 @@ footer li {
 
   .popular-container {
     background-color: rgb(242, 242, 242);
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
     border-radius: 10px;
     padding: 15px 20px 10px 20px;
     width: 45%;
-    height: 520px;
+    height: 550px;
     margin-left: 40px;
+  }
+  .popular-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     align-items: center;
     justify-content: space-between;
+    height: 90%;
   }
-
   .popular-article {
     width: 88%;
-    height: 20%;
+    height: 23%;
     background: white;
     border-radius: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 43px;
     transition: 0.2s ease-in-out;
     cursor: pointer;
     font-size: 0.8em;
   }
 
   .stars {
-    margin: 14px;
+    margin: 38px;
   }
 
   .stars1 {
-    margin: 14px;
+    margin: 21px;
   }
 
   .activities {
-    margin-top: 30px;
+    margin-top: 60px;
   }
 
   .activities-container {
@@ -695,13 +711,13 @@ footer li {
   }
 
   .vieux {
-    width: 100%;
+    width: 99%;
     top: 5px;
     border-radius: 25px 25px 0px 0px;
   }
 
   .national {
-    width: 100%;
+    width: 99%;
     top: 5px;
     border-radius: 25px 25px 0px 0px;
   }
@@ -717,26 +733,26 @@ footer li {
   }
 
   .pomegues {
-    width: 100%;
+    width: 99%;
     height: 180px;
     border-radius: 25px 25px 0px 0px;
   }
 
   .frioul {
-    width: 100%;
+    width: 99%;
     height: 110px;
     margin-top: 48px;
     border-radius: 25px 25px 0px 0px;
   }
 
   .notre_dame {
-    width: 100%;
+    width: 99%;
     height: 142px;
     border-radius: 25px 25px 0px 0px;
   }
 
   .longchamps {
-    width: 100%;
+    width: 99%;
     height: 162px;
     margin-top: 38px;
     border-radius: 25px 25px 0px 0px;
@@ -751,7 +767,7 @@ footer li {
   }
 
   .footer-container {
-    margin-top: 46px;
+    margin-top: 80px;
     width: 100%;
   }
 
@@ -771,359 +787,6 @@ footer li {
 
   .help {
     width: 33.3%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  header,
-  main {
-    margin: 0px;
-    width: 480px;
-  }
-
-  header {
-    font-size: 0.7em;
-    flex-wrap: wrap;
-    height: 133px;
-    width: 267px;
-  }
-
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-
-  nav :nth-child(1) {
-    order: 1;
-  }
-  nav :nth-child(2) {
-    order: 3;
-  }
-  nav :nth-child(3) {
-    order: 4;
-  }
-  nav :nth-child(4) {
-    order: 2;
-  }
-  .Reservia {
-    display: none;
-  }
-
-  #Reservia {
-    display: block;
-    margin-left: 30px;
-  }
-
-  .navlodging {
-    font-size: 1.6em;
-    width: auto;
-    padding: 15px 62px 7px 50px;
-    border-bottom: solid 3px #f2f2f2;
-    position: relative;
-    bottom: 55px;
-  }
-
-  .navactivities {
-    font-size: 1.6em;
-    width: auto;
-    padding: 20px 100px 7px 74px;
-    border-bottom: solid 3px #f2f2f2;
-    position: relative;
-    left: 236px;
-    bottom: 108px;
-  }
-
-  .navlogin {
-    font-size: 1.8em;
-    width: 45%;
-    font-weight: bold;
-    position: relative;
-    left: 347px;
-    bottom: 53px;
-  }
-
-  .navlodging:hover {
-    border-top: solid 2px white;
-    border-bottom: solid 3px #0065fc;
-  }
-
-  .navactivities:hover {
-    border-top: solid 2px white;
-    border-bottom: solid 3px #0065fc;
-  }
-  .marker {
-    margin-left: 22px;
-    font-size: 1em;
-    padding: 10px 20px 13px 20px;
-  }
-
-  .searchbtn {
-    display: none;
-  }
-
-  #magnifying {
-    display: inline-block;
-    text-decoration: none;
-    padding: 12px 15px 14px 15px;
-    background-color: #0065fc;
-    color: white;
-    border: none;
-    width: 17px;
-    min-width: 17px;
-    font-size: 15px;
-    border-radius: 12px;
-    position: relative;
-    right: 15px;
-  }
-  .title1 {
-    font-size: 1.6em;
-    margin-left: 20px;
-    margin-top: 0px;
-    width: 460px;
-  }
-
-  .filters_title {
-    font-size: 1.2em;
-    width: 52%;
-    margin-left: 21px;
-    margin-top: 5px;
-  }
-
-  .filters_container {
-    flex-wrap: wrap;
-    width: 320px;
-  }
-
-  .filters i {
-    font-size: 0.8em;
-    padding: 10px;
-  }
-
-  .filters {
-    border: 2px solid;
-    border-color: #f2f2f2;
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-left: 20px;
-  }
-
-  .filters-text {
-    padding: 0px 0px 0px 5px;
-  }
-
-  #child {
-    padding: 10px 12px 10px 12px;
-  }
-  h2 {
-    font-size: 1em;
-  }
-
-  h3 {
-    font-size: 1em;
-    margin-left: 21px;
-    width: 459px;
-  }
-  .lodge {
-    width: 465px;
-  }
-  .lodge i {
-    margin-left: 15px;
-  }
-
-  .lodge p {
-    margin-left: 9px;
-    font-weight: 100;
-    font-size: 0.9em;
-  }
-
-  .container {
-    margin-left: 0px;
-    flex-wrap: wrap-reverse;
-    width: 480px;
-  }
-  .lodg-title {
-    margin-left: 20px;
-  }
-  .lodging-wrapper:nth-child(1) {
-    order: 2;
-  }
-
-  .lodging:nth-child(2) {
-    order: 1;
-  }
-
-  .lodging-container {
-    padding: 0px;
-    height: 400px;
-    background-color: white;
-    margin-bottom: 750px;
-  }
-
-  .lodging-wrapper {
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .btn {
-    font-weight: bold;
-    font-size: 0.9em;
-    margin-left: 60px;
-  }
-
-  .lodging {
-    width: 102%;
-    height: 150px;
-    margin-left: 50px;
-    border: 2px solid #f2f2f2;
-    box-shadow: 0px 3px 3px #f2f2f2;
-  }
-
-  .lodging:hover {
-    transform: scale(1.1);
-  }
-
-  .lodging-img {
-    width: 100%;
-    height: 93px;
-  }
-
-  .popular-title {
-    width: 90%;
-    margin-left: 20px;
-  }
-
-  .popular-img {
-    width: 32%;
-    height: 103px;
-  }
-
-  .popular-container {
-    height: 445px;
-    margin-left: 0px;
-    padding: 0px;
-  }
-
-  .popular-article {
-    width: 75%;
-    height: 25%;
-  }
-
-  .stars {
-    margin: 40px;
-  }
-
-  .stars1 {
-    margin: 40px;
-  }
-
-  .activities {
-    margin-top: 60px;
-    margin-left: 25px;
-  }
-
-  .activities-container {
-    width: 480px;
-    height: auto;
-    flex-wrap: nowrap;
-    margin: 0px;
-    flex-direction: column;
-    margin-bottom: 50px;
-  }
-
-  .big-activities {
-    width: 74%;
-    height: 8em;
-    margin-bottom: 60px;
-  }
-
-  .vieux {
-    width: 100%;
-    height: 110px;
-    top: 4px;
-  }
-
-  .national {
-    width: 100%;
-    height: 110px;
-    top: 4px;
-  }
-
-  .medium-container {
-    align-items: center;
-    width: 100%;
-    top: 0px;
-  }
-
-  .medium-activities {
-    width: 74%;
-    height: 8em;
-    margin-bottom: 60px;
-  }
-
-  .pomegues {
-    width: 100%;
-    height: 110px;
-    margin-top: 0px;
-    top: 4px;
-  }
-
-  .frioul {
-    width: 100%;
-    height: 110px;
-    margin-top: 0px;
-    top: 4px;
-  }
-
-  .notre_dame {
-    width: 100%;
-    height: 110px;
-    margin-top: 0px;
-    top: 4px;
-  }
-
-  .longchamps {
-    width: 100%;
-    height: 110px;
-    margin-top: 0px;
-    top: 4px;
-  }
-
-  .legende2 {
-    padding: 14px 8px 14px 8px;
-    width: 95%;
-  }
-
-  footer {
-    margin-right: 0px;
-  }
-
-  .footer-container {
-    margin-top: 0px;
-    font-size: 1.1em;
-    flex-direction: column;
-    width: 480px;
-  }
-
-  footer ul {
-    font-size: 0.8em;
-  }
-
-  .about-us {
-    width: 50%;
-    margin-left: 20px;
-    margin-top: 20px;
-  }
-
-  .lodgings {
-    width: 50%;
-    margin-top: 20px;
-    margin-left: 20px;
-  }
-
-  .help {
-    margin-left: 20px;
-    width: 50%;
   }
 }
 
@@ -1140,7 +803,9 @@ footer li {
     width: 944px;
     margin: 0px 0px 0px 40px;
   }
-
+  .title1 {
+    font-size: 1.5em;
+  }
   .navlodging {
     font-size: 0.9em;
   }
@@ -1163,6 +828,10 @@ footer li {
     padding: 13px 13px 13px 15px;
     width: 170px;
     min-width: 50px;
+  }
+  ::placeholder {
+    font-size: 0.8em;
+    color: black;
   }
   .searchbtn {
     padding: 11px 10px 11px 15px;
@@ -1275,14 +944,16 @@ footer li {
 
   .popular-container {
     background-color: rgb(242, 242, 242);
+    border-radius: 10px;
+    padding: 15px 20px 10px 20px;
+    width: 45%;
+    height: 554px;
+    margin-left: 40px;
+  }
+  .popular-wrapper {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    border-radius: 10px;
-    padding: 15px 20px 10px 20px;
-    width: 43%;
-    height: 554px;
-    margin-left: 40px;
     align-items: center;
     justify-content: space-between;
   }
@@ -1299,11 +970,11 @@ footer li {
   }
 
   .stars {
-    margin: 50px;
+    margin: 36px;
   }
 
   .stars1 {
-    margin: 50px;
+    margin: 36px;
   }
 
   .activities {
@@ -1387,10 +1058,11 @@ footer li {
 
   .legende2 {
     padding: 8px;
+    font-size: 0.9em;
   }
 
   .footer-container {
-    margin-top: 60px;
+    margin-top: 30px;
     width: 1024px;
   }
 
@@ -1410,6 +1082,306 @@ footer li {
 
   .help {
     width: 33.3%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #bloc_page {
+    width: auto;
+  }
+
+  body {
+    margin: 0px;
+  }
+  header,
+  main {
+    width: 728px;
+    margin: 14px 0px 0px 40px;
+  }
+
+  .navlodging {
+    font-size: 0.9em;
+  }
+
+  .navactivities {
+    font-size: 0.9em;
+  }
+
+  .navlogin {
+    font-size: 0.9em;
+  }
+
+  .marker {
+    margin-left: 0px;
+    padding: 12px 20px;
+    font-size: 1em;
+  }
+  #pholder {
+    font-size: 1.1em;
+    padding: 13px 13px 13px 15px;
+    width: 170px;
+    min-width: 50px;
+  }
+  ::placeholder {
+    font-size: 0.8em;
+    color: black;
+  }
+  .searchbtn {
+    padding: 11px 10px 11px 15px;
+    left: -10px;
+    bottom: 1px;
+    right: 10px;
+  }
+
+  .filters_title {
+    font-size: 0.9em;
+    margin-left: 4px;
+  }
+
+  .filters i {
+    font-size: 0.8em;
+  }
+
+  .filters {
+    border: 1px solid #f2f2f2;
+    margin: 5px;
+  }
+
+  .filters-text {
+    padding: 5px;
+    font-size: 0.8em;
+  }
+
+  h3 {
+    font-size: 0.8em;
+    margin-left: 4px;
+  }
+
+  .lodge i {
+    height: 15px;
+    width: 15px;
+    border: 1px solid #f2f2f2;
+    border-radius: 31px;
+    padding: 4px 4px 4px 4px;
+    margin-left: 0px;
+  }
+
+  .lodge p {
+    font-size: 0.8em;
+  }
+
+  .container {
+    margin-left: 0px;
+    flex-wrap: wrap-reverse;
+    width: 706px;
+  }
+
+  .lodging-wrapper:nth-child(1) {
+    order: 2;
+  }
+
+  .lodging:nth-child(2) {
+    order: 1;
+  }
+
+  .lodging-container {
+    height: 554px;
+    width: 90%;
+    margin-left: 4px;
+    margin-top: 30px;
+  }
+
+  .lodg-title {
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 1em;
+    margin-left: 0px;
+  }
+
+  .lodging-wrapper {
+    padding: 10px;
+  }
+
+  .btn {
+    font-size: 0.8em;
+  }
+
+  .lodging {
+    width: 35%;
+    height: 129px;
+    padding: 3px;
+    margin: 0px 15px 21px 15px;
+    font-size: 0.8em;
+  }
+
+  .lodging:hover {
+    transform: scale(1.1);
+  }
+
+  .lodging-img {
+    height: 70px;
+  }
+
+  .popular-title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1em;
+  }
+
+  .popular-img {
+    width: 37%;
+    height: 100%;
+    border-radius: 15px 0px 0px 15px;
+    flex-grow: 1;
+    float: left;
+    padding-right: 10px;
+  }
+
+  .popular-container {
+    background-color: rgb(242, 242, 242);
+    border-radius: 10px;
+    padding: 15px 20px 10px 20px;
+    width: 90%;
+    height: 160px;
+    margin-left: 4px;
+  }
+  .popular-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+    height: 76%;
+  }
+
+  .popular-article {
+    width: 30%;
+    height: 73%;
+    background: white;
+    border-radius: 15px;
+    margin-bottom: 32px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    font-size: 0.8em;
+  }
+
+  .stars {
+    margin: 6px;
+  }
+
+  .stars1 {
+    margin: 6px;
+  }
+
+  .activities {
+    margin-top: 30px;
+  }
+
+  .activities-container {
+    width: 92%;
+    height: 392px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px;
+  }
+  figure {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+  .big-activities {
+    width: 24%;
+    height: 83%;
+  }
+
+  .vieux {
+    width: 99%;
+    top: 5px;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .national {
+    width: 99%;
+    top: 5px;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .medium-container {
+    justify-content: flex-start;
+    width: 24%;
+    height: 77%;
+    position: relative;
+    bottom: 15px;
+  }
+
+  .medium-activities {
+    width: 161px;
+    height: 52%;
+  }
+
+  .pomegues {
+    width: 99%;
+    height: 114px;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .frioul {
+    width: 99%;
+    height: 80px;
+    margin-top: 57px;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .notre_dame {
+    width: 99%;
+    height: 80px;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .longchamps {
+    width: 99%;
+    height: 100px;
+    margin-top: 44px;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .legende {
+    font-size: 12px;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .legende2 {
+    padding: 8px;
+    font-size: 0.8em;
+  }
+
+  .footer-container {
+    margin-top: 30px;
+    width: 768px;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  .about-us {
+    margin-left: 32px;
+    width: 256px;
+  }
+
+  .lodgings {
+    width: 256px;
+    margin-left: 32px;
+  }
+
+  .help {
+    width: 256px;
+    margin-left: 32px;
   }
 }
 
@@ -1457,20 +1429,21 @@ footer li {
   .navlodging {
     font-size: 1.6em;
     width: auto;
-    padding: 15px 62px 7px 50px;
+    padding: 15px 51px 7px 61px;
     border-bottom: solid 3px #f2f2f2;
     position: relative;
-    bottom: 55px;
+    bottom: 17px;
   }
 
   .navactivities {
     font-size: 1.6em;
     width: auto;
-    padding: 20px 100px 7px 74px;
+    padding: 18px 88px 7px 86px;
     border-bottom: solid 3px #f2f2f2;
     position: relative;
     left: 236px;
-    bottom: 108px;
+    bottom: 68px;
+    margin-right: 0px;
   }
 
   .navlogin {
@@ -1478,8 +1451,9 @@ footer li {
     width: 45%;
     font-weight: bold;
     position: relative;
-    left: 347px;
-    bottom: 53px;
+    left: 222px;
+    bottom: 10px;
+    margin-right: 0px;
   }
 
   .navlodging:hover {
@@ -1494,13 +1468,18 @@ footer li {
   .marker {
     margin-left: 22px;
     font-size: 1em;
-    padding: 10px 20px 13px 20px;
+    padding: 13px 20px 10px 20px;
   }
-
+  #pholder {
+    min-width: 290px;
+    padding-right: 150px;
+  }
   .searchbtn {
     display: none;
   }
-
+  .searchbar {
+    height: 43px;
+  }
   #magnifying {
     display: inline-block;
     text-decoration: none;
@@ -1513,10 +1492,12 @@ footer li {
     font-size: 15px;
     border-radius: 12px;
     position: relative;
-    right: 15px;
+    right: 0px;
+    left: 353px;
+    bottom: 42px;
   }
   .title1 {
-    font-size: 1.6em;
+    font-size: 1.5em;
     margin-left: 20px;
     margin-top: 0px;
     width: 460px;
@@ -1531,7 +1512,7 @@ footer li {
 
   .filters_container {
     flex-wrap: wrap;
-    width: 320px;
+    width: 381px;
   }
 
   .filters i {
@@ -1548,7 +1529,7 @@ footer li {
   }
 
   .filters-text {
-    padding: 0px 0px 0px 5px;
+    padding: 20px;
   }
 
   #child {
@@ -1597,6 +1578,7 @@ footer li {
     height: 400px;
     background-color: white;
     margin-bottom: 750px;
+    margin-top: 0px;
   }
 
   .lodging-wrapper {
@@ -1611,9 +1593,9 @@ footer li {
   }
 
   .lodging {
-    width: 102%;
+    width: 86%;
     height: 150px;
-    margin-left: 50px;
+    margin-left: 45px;
     border: 2px solid #f2f2f2;
     box-shadow: 0px 3px 3px #f2f2f2;
   }
@@ -1639,13 +1621,21 @@ footer li {
 
   .popular-container {
     height: 445px;
+    width: 100%;
     margin-left: 0px;
     padding: 0px;
+  }
+  .popular-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .popular-article {
     width: 75%;
-    height: 25%;
+    height: 31%;
   }
 
   .stars {
@@ -1671,7 +1661,7 @@ footer li {
   }
 
   .big-activities {
-    width: 74%;
+    width: 75%;
     height: 8em;
     margin-bottom: 60px;
   }
@@ -1695,7 +1685,7 @@ footer li {
   }
 
   .medium-activities {
-    width: 74%;
+    width: 75%;
     height: 8em;
     margin-bottom: 60px;
   }
@@ -1805,13 +1795,13 @@ footer li {
 
   #Reservia {
     display: block;
-    margin-left: 30px;
+    margin-left: 22px;
   }
 
   .navlodging {
     font-size: 1.4em;
     width: 37%;
-    padding: 15px 31px 7px 48px;
+    padding: 15px 39px 7px 40px;
     border-bottom: solid 3px #f2f2f2;
     position: relative;
     bottom: 6px;
@@ -1833,7 +1823,7 @@ footer li {
     width: 25%;
     font-weight: bold;
     position: relative;
-    left: 125px;
+    left: 140px;
     bottom: 0px;
     margin-right: 0px;
   }
@@ -1851,6 +1841,7 @@ footer li {
   #pholder {
     font-size: 1em;
     min-width: 240px;
+    padding-right: 100px;
   }
   .marker {
     padding: 12px 20px 11px 20px;
@@ -1858,6 +1849,8 @@ footer li {
 
   #magnifying {
     padding: 14px 15px;
+    left: -16px;
+    bottom: 0px;
   }
 
   .title1 {
@@ -1876,6 +1869,9 @@ footer li {
 
   .filters_container {
     width: 321px;
+  }
+  .filters-text {
+    padding: 5px;
   }
 
   .lodge {
@@ -1901,9 +1897,9 @@ footer li {
     margin-bottom: 40px;
   }
   .lodging {
-    width: 87%;
+    width: 93%;
     height: 150px;
-    margin-left: 20px;
+    margin-left: 6px;
     border: 2px solid #f2f2f2;
     box-shadow: 0px 3px 3px #f2f2f2;
   }
@@ -1911,12 +1907,23 @@ footer li {
     width: 375px;
     margin: 0px;
   }
+  .popular-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   .popular-title {
     width: 90%;
-    margin-left: 0px;
+    margin-left: 20px;
   }
   .popular-article {
-    height: 23%;
+    height: 31%;
+  }
+  .popular-img {
+    height: 105px;
   }
   .btn {
     font-size: 0.9em;
