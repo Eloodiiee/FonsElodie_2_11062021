@@ -1766,15 +1766,19 @@ footer li {
   }
 }
 @media screen and (max-width: 375px) {
+  body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+  }
+  body,
+  html {
+    height: 100vh;
+  }
+
   header,
   main {
     width: 296px;
-  }
-  .title1 {
-    font-size: 1.3em;
-    margin-left: 17px;
-    margin-top: 0px;
-    width: 350px;
   }
 
   nav {
@@ -1805,31 +1809,33 @@ footer li {
   }
 
   .navlodging {
-    font-size: 1.6em;
-    width: auto;
-    padding: 15px 30px 7px 40px;
+    font-size: 1.4em;
+    width: 37%;
+    padding: 15px 31px 7px 48px;
     border-bottom: solid 3px #f2f2f2;
     position: relative;
-    bottom: 55px;
+    bottom: 6px;
   }
 
   .navactivities {
-    font-size: 1.6em;
-    width: auto;
-    padding: 20px 71px 7px 40px;
+    font-size: 1.4em;
+    width: 29%;
+    padding: 20px 60px 7px 49px;
     border-bottom: solid 3px #f2f2f2;
     position: relative;
-    left: 194px;
-    bottom: 108px;
+    left: 180px;
+    bottom: 57px;
+    margin-right: 0px;
   }
 
   .navlogin {
-    font-size: 1.8em;
-    width: 45%;
+    font-size: 1.5em;
+    width: 25%;
     font-weight: bold;
     position: relative;
-    left: 268px;
-    bottom: 53px;
+    left: 125px;
+    bottom: 0px;
+    margin-right: 0px;
   }
   .navlodging:hover {
     border-top: solid 2px white;
@@ -1839,6 +1845,39 @@ footer li {
     border-top: solid 2px white;
     border-bottom: solid 3px #0065fc;
   }
+  ::placeholder {
+    font-size: 0.9em;
+  }
+  #pholder {
+    font-size: 1em;
+    min-width: 240px;
+  }
+  .marker {
+    padding: 12px 20px 11px 20px;
+  }
+
+  #magnifying {
+    padding: 14px 15px;
+  }
+
+  .title1 {
+    font-size: 1.3em;
+    width: 277px;
+  }
+
+  h3 {
+    font-size: 1em;
+    margin-left: 21px;
+    width: 303px;
+  }
+  .searchbar {
+    width: 375px;
+  }
+
+  .filters_container {
+    width: 321px;
+  }
+
   .lodge {
     width: 360px;
   }
@@ -1849,22 +1888,120 @@ footer li {
   .lodge p {
     margin-left: 9px;
     font-weight: 100;
-    font-size: 1em;
+    font-size: 0.9em;
   }
   .container {
     width: 375px;
   }
+  .lodging-container {
+    width: 375px;
+  }
+  .lodging-wrapper {
+    height: auto;
+    margin-bottom: 40px;
+  }
+  .lodging {
+    width: 87%;
+    height: 150px;
+    margin-left: 20px;
+    border: 2px solid #f2f2f2;
+    box-shadow: 0px 3px 3px #f2f2f2;
+  }
   .popular-container {
     width: 375px;
+    margin: 0px;
+  }
+  .popular-title {
+    width: 90%;
+    margin-left: 0px;
+  }
+  .popular-article {
+    height: 23%;
+  }
+  .btn {
+    font-size: 0.9em;
+    position: relative;
+    bottom: 57px;
+    margin-left: 20px;
+  }
+  .stars1 {
+    margin: 33px;
+  }
+
+  .stars {
+    margin: 47px;
+  }
+
+  .activities {
+    margin-top: 60px;
+    margin-left: 25px;
   }
   .activities-container {
     width: 375px;
   }
-  .footer-container {
-    width: 375px;
+
+  .big-activities {
+    width: 87%;
+    height: 8em;
+    margin-bottom: 60px;
   }
 
-  .lodging {
-    width: 75%;
+  .vieux {
+    width: 100%;
+    height: 110px;
+    top: 4px;
+  }
+
+  .national {
+    width: 100%;
+    height: 110px;
+    top: 4px;
+  }
+
+  .medium-container {
+    align-items: center;
+    width: 100%;
+    top: 0px;
+  }
+
+  .medium-activities {
+    width: 87%;
+    height: 8em;
+    margin-bottom: 60px;
+  }
+
+  .pomegues {
+    width: 100%;
+    height: 110px;
+    margin-top: 0px;
+    top: 4px;
+  }
+
+  .frioul {
+    width: 100%;
+    height: 110px;
+    margin-top: 0px;
+    top: 4px;
+  }
+
+  .notre_dame {
+    width: 100%;
+    height: 110px;
+    margin-top: 0px;
+    top: 4px;
+  }
+
+  .longchamps {
+    width: 100%;
+    height: 110px;
+    margin-top: 0px;
+    top: 4px;
+  }
+
+  .legende2 {
+    width: 95%;
+  }
+  .footer-container {
+    width: 375px;
   }
 }
