@@ -6,28 +6,24 @@
   font-weight: normal;
   font-style: normal;
 }
-
 header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
-
 header,
 main {
-  margin: 0px 40px; /*marge sur les côtés*/
+  margin: 0% 2%; /*marge sur les côtés*/
+  width: 96%;
 }
-
 body {
-  font-family: "Raleway-Regular", Verdana, sans-serif; /* utilisation des polices sur la totalité de la page */
+  font-family: "Raleway-Regular", "Verdana, sans-serif"; /* utilisation des polices sur la totalité de la page */
   font-size: 100%; /* nota bene 100% = 16px  - Ailleurs mettre combien de rem - par ex au lieu de 32px mettre 2rem */
   margin: 0px;
 }
-
 #Reservia {
   display: none;
 }
-
 .title1 {
   margin-top: 40px;
 }
@@ -37,59 +33,57 @@ h4 {
   margin-block-end: 0em;
   font-weight: bolder;
 }
+/* Nav bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  margin-right: 5%;
+}
 .navlodging {
-  /* Nav bar */
+  font-size: 1.1em;
   color: black;
   text-decoration: none;
-  padding: 20px 0px;
-  margin-right: 20px;
+  padding: 7% 0%;
   border-top: solid 2px white;
   transition: 0.2s ease-in-out;
 }
-
 .navlodging:hover {
   border-top: solid 2px #0065fc;
   color: #0065fc;
 }
-
 .navactivities {
+  font-size: 1.1em;
   color: black;
   text-decoration: none;
-  padding: 20px 0px;
-  margin-right: 20px;
+  padding: 7% 0%;
   border-top: solid 2px white;
   transition: 0.2s ease-in-out;
 }
-
 .navactivities:hover {
   border-top: solid 2px #0065fc;
   color: #0065fc;
 }
-
 .navlogin {
+  font-size: 1.1em;
   color: #0065fc;
   text-decoration: none;
-  padding: 20px 0px;
-  margin-right: 20px;
+  padding: 7% 0%;
   border-top: solid 2px white;
   transition: 0.2s ease-in-out;
 }
-
 .navlogin:hover {
   border-top: solid 2px #0065fc;
   font-weight: bold; /* end of Nav bar*/
 }
-
+/* Filters section*/
 .filters_container {
-  /* Filters section*/
   display: flex;
 }
-
 .filters_title {
   margin-top: 22px;
   margin-right: 20px;
 }
-
 .filters i {
   background-color: rgba(0, 65, 232, 0.1);
   border-radius: 50px;
@@ -97,16 +91,13 @@ h4 {
   color: #0065fc;
   transition: 0.2s ease-in-out;
 }
-
+/* This icon didn't make a circle so it has its own padding*/
 #child {
-  /* This icon didn't make a circle so it has its own padding*/
   padding: 15px 17px;
 }
-
 .filters i:hover {
   transform: scale(1.2);
 }
-
 .filters {
   text-decoration: none;
   border: 2px solid;
@@ -119,53 +110,42 @@ h4 {
 .filters-text {
   padding: 0 10px;
 }
-
 .filters-text:hover {
   color: #0065fc;
 }
-
 a {
   color: black;
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: blink;
 }
-
 h1 {
   font-size: 20px;
 }
-
 h3 {
   font-size: 14px;
   font-weight: 100;
 }
-
 .searchbar {
-  width: 375px;
+  display: flex;
+  height: 42px;
 }
-
 .marker {
   background-color: #f2f2f2;
   border-radius: 12px 0px 0px 12px;
-  padding: 12px 12px 12px 20px;
+  padding: 12px 20px 11px 20px;
 }
-
 #pholder {
   width: 170px;
-  min-width: 50px;
   height: 42px;
   padding-left: 15px;
   text-align: center;
-  margin-top: 1px;
   font-size: 1.1em;
   padding: 13px;
   border: none;
   border-top: 2px solid #f2f2f2;
   border-bottom: 2px solid #f2f2f2;
-  position: relative;
-  right: 6px;
   font-family: "Raleway-Regular";
 }
 
@@ -175,31 +155,22 @@ h3 {
   background-color: #0065fc;
   color: white;
   cursor: pointer;
-  border: none;
-  width: 170px;
-  min-width: 50px;
   font-size: 15px;
   border-radius: 0 12px 12px 0;
-  position: relative;
-  right: 15px;
 }
-
 #magnifying {
   display: none;
 }
-
 ::placeholder {
   color: black;
   font-size: 15px;
   font-weight: bold;
 }
-
 .lodge {
   display: flex;
   align-items: center;
   margin-bottom: 1em;
 }
-
 .lodge i {
   color: #0065fc;
   height: 20px;
@@ -209,270 +180,241 @@ h3 {
   border-radius: 35px;
   padding: 8px 6px 4px 6px;
 }
-
 .lodge p {
   margin-left: 10px;
   font-weight: 100;
 }
-
 .container {
   display: flex;
+  width: 100%;
+  height: 665px;
 }
-
 .lodg-title {
   font-size: 0.9em;
 }
-
 .lodging-container {
   background-color: rgb(242, 242, 242);
   border-radius: 10px;
   padding: 15px 20px 10px 20px;
-  width: 75%;
-  height: 665px;
+  width: 74%;
+  height: 100%;
 }
-
 .lodging-wrapper {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+  height: 85%;
 }
-
 .lodging {
-  width: 25%;
-  height: 250px;
+  width: 23%;
+  height: 43%;
   background: white;
   border-radius: 15px;
   padding: 5px;
   transition: 0.2s ease-in-out;
   cursor: pointer;
-  margin: 0px 40px 25px 40px;
+  margin: 0px 40px;
 }
-
 .lodging:hover {
   transform: scale(1.1);
 }
-
 .lodging-img {
   width: 100%;
   object-fit: cover;
-  height: 170px;
+  height: 70%;
   border-radius: 10px 10px 0px 0px;
   cursor: pointer;
   display: flex;
   justify-content: space-around;
 }
-
 .btn {
   font-weight: 600;
   cursor: pointer;
 }
-
 .blue {
   color: #0065fc;
-  font-size: 10px;
+  font-size: 0.7em;
 }
 .grey {
   color: #f2f2f2;
-  font-size: 10px;
+  font-size: 0.7em;
+}
+.star {
+  margin-top: 3px;
 }
 .stars {
-  margin: 65px;
+  margin-top: 10%;
 }
-
 .stars1 {
-  margin: 45px;
+  margin-top: 10%;
 }
-
 .popular-title {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  font-size: 0.9em;
+  font-size: 1.3em;
 }
-
 .popular-container {
   background-color: rgb(242, 242, 242);
   border-radius: 10px;
   padding: 15px 20px 10px 20px;
-  width: 25%;
-  height: 665px;
-  margin-left: 60px;
+  width: 26%;
+  height: 100%;
+  margin-left: 3%;
 }
 .popular-wrapper {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  height: 85%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
-
 .popular-container i.fa-chart-line {
   color: black;
 }
-
 .popular-article {
   width: 98%;
-  height: 24%;
+  height: 123px;
   background: white;
   border-radius: 15px;
-  margin-bottom: 50px;
   padding: 2px;
+  margin: 7% 0%;
   transition: 0.2s ease-in-out;
   cursor: pointer;
 }
-
 .popular-article:hover {
   transform: scale(1.1);
 }
-
 .popular-img {
   display: flex;
-  width: 41%;
-  height: 154px;
+  width: 30%;
+  height: 122px;
   border-radius: 15px 0px 0px 15px;
-  flex-grow: 1;
   float: left;
   padding-right: 20px;
 }
-
+.act {
+  margin: 0% 6%;
+}
 .activities {
-  margin-top: 50px;
+  margin-top: 3%;
 }
-
 .activities-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  border-radius: 10px;
-  margin: 20px 0px 0px 0px;
-  justify-content: space-evenly;
-  cursor: pointer;
+  height: 500px;
 }
-
-.big-activities {
+.activities-wrapper {
   display: flex;
-  flex-direction: column;
-  width: 290px;
-  height: 459px;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+.big-activities {
+  width: 18%;
+  height: 99.2%;
+  border: 2px solid #f2f2f2;
+  border-radius: 15px;
+  box-shadow: 0px 5px 3px #f2f2f2;
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
-
 .big-activities:hover {
   transform: scale(1.05);
 }
-
 .medium-container {
+  display: flex;
+  width: 18%;
+  height: 100%;
+}
+.medium-wrapper {
   flex-direction: column;
   display: flex;
   justify-content: space-between;
-  cursor: pointer;
-  padding: 0%;
+  height: 100%;
+  width: 100%;
 }
-
 .medium-activities {
-  width: 290px;
   cursor: pointer;
   transition: 0.2s ease-in-out;
+  height: 47%;
+  border: 2px solid #f2f2f2;
+  border-radius: 15px;
+  box-shadow: 0px 5px 3px #f2f2f2;
+}
+.thin {
+  height: 30%;
+}
+.medium {
+  height: 38%;
 }
 .medium-activities:hover {
   transform: scale(1.05);
 }
-
 .legende {
-  text-align: inherit;
+  text-align: left;
   padding: 10px;
 }
-
 .legende2 {
-  border: 2px solid #f2f2f2;
-  border-radius: 0px 0px 10px 10px;
-  padding: 15px;
-  box-shadow: 5px 5px 3px #f2f2f2;
+  padding: 12px 15px 0px 15px;
 }
-
 .pomegues {
   object-fit: cover;
   width: 100%;
-  height: 190px;
+  height: 79%;
   border-radius: 10px 10px 0px 0px;
-  position: relative;
-  top: 10px;
 }
-
 .vieux {
   object-fit: cover;
   border-radius: 10px 10px 0px 0px;
   width: 100%;
-  height: 100%;
-  position: relative;
-  top: 10px;
+  height: 90%;
 }
-
 .frioul {
   object-fit: cover;
   border-radius: 10px 10px 0px 0px;
   width: 100%;
-  height: 110px;
-  position: relative;
-  top: 10px;
-  object-fit: cover;
+  height: 68%;
 }
-
 .national {
   object-fit: cover;
   border-radius: 10px 10px 0px 0px;
   width: 100%;
-  height: 100%;
-  position: relative;
-  top: 10px;
+  height: 90%;
 }
-
 .notre_dame {
   object-fit: cover;
   border-radius: 10px 10px 0px 0px;
   width: 100%;
-  height: 120px;
-  position: relative;
-  top: 10px;
+  height: 76%;
 }
-
 .longchamps {
   object-fit: cover;
   width: 100%;
-  height: 170px;
+  height: 76%;
   border-radius: 10px 10px 0px 0px;
-  position: relative;
-  top: 10px;
 }
-
 .footer-container {
   background-color: rgb(242, 242, 242);
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
-  margin-top: 100px;
-  width: 1903px;
+  margin-top: 5%;
+  width: 100%;
 }
-
 .about-us {
   margin-left: 50px;
   margin-top: 20px;
   width: 25%;
 }
-
 .lodgings {
   margin-top: 20px;
   width: 25%;
 }
-
 .help {
   margin-left: 50px;
   margin-top: 20px;
   width: 25%;
 }
-
 footer ul {
   margin-bottom: 20px;
   list-style-type: none;
@@ -481,89 +423,53 @@ footer ul {
 footer li {
   margin: 12px 0px;
 }
-
 @media screen and (max-width: 1440px) {
-  #bloc_page {
-    width: auto;
+  nav {
+    width: 32%;
   }
-
-  body {
-    margin: 0px;
-  }
-  header,
-  main {
-    width: 96%;
-    margin: 10px 0px 0px 40px;
-  }
-
   .Reservia {
     width: 9%;
   }
-
   .title1 {
     margin-top: 50px;
     font-size: 1.8em;
   }
-  .navlodging {
-    font-size: 1.2em;
-  }
-
-  .navactivities {
-    font-size: 1.2em;
-    padding: 20px 30px;
-  }
-
-  .navlogin {
-    font-size: 1.2em;
-    margin-right: 53px;
-  }
-
   .searchbar {
-    width: 375px;
+    height: 56px;
   }
-
   .marker {
     margin-left: 10px;
-    padding: 16px 20px;
+    padding: 16px 25px;
     font-size: 1.3em;
   }
   #pholder {
-    min-width: 309px;
     font-size: 1.3em;
     font-weight: 100;
     width: 302px;
     padding: 26px 50px 26px 0px;
   }
-
   ::placeholder {
     font-size: 1.1em;
   }
   .searchbtn {
-    padding: 18px 25px;
-    right: 0px;
-    left: 362px;
-    bottom: 39px;
+    font-size: 20px;
+    padding: 15px 12px 0px 15px;
   }
-
   .filters_title {
     font-size: 1.6em;
     margin-left: 14px;
   }
-
   .filters i {
     font-size: 1.5em;
   }
-
   .filters {
     border: 3px solid #f2f2f2;
     padding: 0px 9px 0px 0px;
   }
-
   .filters-text {
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: 600;
   }
-
   h3 {
     font-size: 1.5em;
     margin-left: 10px;
@@ -572,7 +478,6 @@ footer li {
     margin-bottom: 30px;
     margin-top: 10px;
   }
-
   .lodge i {
     height: 15px;
     width: 15px;
@@ -581,243 +486,148 @@ footer li {
     padding: 4px 4px 4px 4px;
     margin-left: 14px;
   }
-
   .lodge p {
     font-size: 1.5em;
   }
-
   .container {
-    width: 97%;
-  }
-
-  .lodging-wrapper:nth-child(1) {
-    order: 2;
-  }
-
-  .lodging:nth-child(2) {
-    order: 1;
-  }
-
-  .lodging-container {
-    height: 550px;
-    width: 100%;
+    height: 532px;
   }
   .lodg-title {
     font-size: 1.3em;
   }
-
   h1 {
-    font-size: 1.6em;
+    font-size: 1.1em;
     margin-left: 6px;
   }
-
   .lodging-wrapper {
     padding: 10px;
+    height: 80%;
   }
-
   .btn {
     font-size: 1.1em;
   }
-
   .lodging {
-    width: 27%;
-    height: 177px;
-    padding: 5px;
-    margin: 0px 15px 26px 15px;
-    font-size: 0.8em;
+    height: 45%;
+    padding: 5px 5px 7px 5px;
+    margin: 0px 15px;
   }
-
   .lodging:hover {
     transform: scale(1.1);
   }
-
   .lodging-img {
-    height: 108px;
+    height: 62%;
   }
-
   .popular-title {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
-
   .popular-img {
-    display: flex;
-    width: 27%;
-    height: 100%;
-    border-radius: 15px 0px 0px 15px;
-    flex-grow: 1;
-    float: left;
-    padding-right: 10px;
-  }
-
-  .popular-container {
-    background-color: rgb(242, 242, 242);
-    border-radius: 10px;
-    padding: 15px 20px 10px 20px;
-    width: 45%;
-    height: 550px;
-    margin-left: 40px;
+    width: 40%;
+    height: 109px;
   }
   .popular-wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    align-items: center;
-    justify-content: space-between;
     height: 90%;
   }
   .popular-article {
-    width: 88%;
-    height: 23%;
-    background: white;
-    border-radius: 15px;
-    margin-bottom: 43px;
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
-    font-size: 0.8em;
+    height: 109px;
   }
-
+  .star {
+    margin-top: 1%;
+  }
   .stars {
-    margin: 38px;
+    margin-top: 5%;
   }
-
   .stars1 {
-    margin: 21px;
+    margin-top: 5%;
   }
-
   .activities {
-    margin-top: 60px;
+    margin-top: 4%;
   }
-
+  .act {
+    margin: 0% 2%;
+  }
   .activities-container {
-    width: 100%;
-    height: 425px;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0px;
+    height: 450px;
   }
-  figure {
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-  }
-
   .big-activities {
-    width: 20%;
-    height: 100%;
+    border-radius: 25px;
+    width: 22%;
   }
-
   .vieux {
-    width: 99%;
-    top: 5px;
     border-radius: 25px 25px 0px 0px;
   }
-
   .national {
-    width: 99%;
-    top: 5px;
     border-radius: 25px 25px 0px 0px;
   }
-
   .medium-container {
-    width: 310px;
-    height: 100%;
+    width: 22%;
   }
-
   .medium-activities {
-    width: 296px;
-    height: 70%;
+    border-radius: 25px;
   }
-
+  .thin {
+    height: 30%;
+  }
   .pomegues {
-    width: 99%;
-    height: 180px;
+    height: 80%;
     border-radius: 25px 25px 0px 0px;
   }
-
   .frioul {
-    width: 99%;
-    height: 110px;
-    margin-top: 48px;
+    height: 70%;
     border-radius: 25px 25px 0px 0px;
   }
-
   .notre_dame {
-    width: 99%;
-    height: 142px;
+    height: 77%;
     border-radius: 25px 25px 0px 0px;
   }
-
   .longchamps {
-    width: 99%;
-    height: 162px;
-    margin-top: 38px;
+    height: 77%;
     border-radius: 25px 25px 0px 0px;
   }
-
   .legende {
-    font-size: 1.2em;
+    font-size: 1em;
+    padding: 2%;
   }
-
   .legende2 {
-    padding: 8px;
+    font-size: 0.9em;
   }
-
   .footer-container {
     margin-top: 80px;
-    width: 100%;
   }
-
   h2 {
     font-size: 1em;
   }
-
   .about-us {
     margin-left: 50px;
     width: 33.3%;
   }
-
   .lodgings {
     width: 33.3%;
     margin-left: 50px;
   }
-
   .help {
     width: 33.3%;
   }
 }
-
 @media screen and (max-width: 1024px) {
-  #bloc_page {
-    width: auto;
-  }
-
-  body {
-    margin: 0px;
-  }
-  header,
-  main {
-    width: 944px;
-    margin: 0px 0px 0px 40px;
-  }
   .title1 {
-    font-size: 1.5em;
+    font-size: 1.3em;
+  }
+  nav {
+    width: 35%;
   }
   .navlodging {
     font-size: 0.9em;
   }
-
   .navactivities {
     font-size: 0.9em;
   }
-
   .navlogin {
     font-size: 0.9em;
   }
 
+  .searchbar {
+    height: 42px;
+  }
   .marker {
     margin-left: 10px;
     padding: 12px 20px;
@@ -827,7 +637,6 @@ footer li {
     font-size: 1.1em;
     padding: 13px 13px 13px 15px;
     width: 170px;
-    min-width: 50px;
   }
   ::placeholder {
     font-size: 0.8em;
@@ -839,30 +648,23 @@ footer li {
     bottom: 1px;
     right: 10px;
   }
-
   .filters_title {
     font-size: 0.9em;
     margin-left: 14px;
   }
-
   .filters i {
     font-size: 0.8em;
   }
-
   .filters {
     border: 1px solid #f2f2f2;
   }
-
   .filters-text {
     padding: 5px;
     font-size: 0.8em;
   }
-
   h3 {
     font-size: 0.8em;
-    margin-left: 10px;
   }
-
   .lodge i {
     height: 15px;
     width: 15px;
@@ -871,246 +673,116 @@ footer li {
     padding: 4px 4px 4px 4px;
     margin-left: 14px;
   }
-
   .lodge p {
     font-size: 0.8em;
   }
-
   .container {
-    width: 944px;
+    height: 450px;
   }
-
-  .lodging-wrapper:nth-child(1) {
-    order: 2;
-  }
-
-  .lodging:nth-child(2) {
-    order: 1;
-  }
-
-  .lodging-container {
-    height: 554px;
-  }
-
   .lodg-title {
     font-size: 1em;
   }
-
   h1 {
     font-size: 1em;
     margin-left: 6px;
   }
-
-  .lodging-wrapper {
-    padding: 10px;
-  }
-
   .btn {
     font-size: 0.8em;
   }
-
   .lodging {
-    width: 35%;
-    height: 129px;
+    width: 25%;
     padding: 3px;
-    margin: 0px 15px 21px 15px;
-    font-size: 0.8em;
   }
-
   .lodging:hover {
     transform: scale(1.1);
   }
-
   .lodging-img {
-    height: 70px;
+    height: 68%;
   }
-
   .popular-title {
     display: flex;
     justify-content: space-between;
     width: 100%;
     font-size: 1em;
   }
-
   .popular-img {
-    display: flex;
-    width: 46%;
-    height: 100%;
-    border-radius: 15px 0px 0px 15px;
-    flex-grow: 1;
-    float: left;
     padding-right: 10px;
+    height: 89px;
   }
-
-  .popular-container {
-    background-color: rgb(242, 242, 242);
-    border-radius: 10px;
-    padding: 15px 20px 10px 20px;
-    width: 45%;
-    height: 554px;
-    margin-left: 40px;
-  }
-  .popular-wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    align-items: center;
-    justify-content: space-between;
-  }
-
   .popular-article {
-    width: 100%;
-    height: 22%;
-    background: white;
-    border-radius: 15px;
-    margin-bottom: 32px;
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
+    height: 89px;
+    width: 97%;
+  }
+  .star {
+    margin-top: 0%;
+  }
+  .stars {
+    margin-top: 10%;
+  }
+  .stars1 {
+    margin-top: 10%;
+  }
+  .activities-container {
+    height: 350px;
+  }
+  .big-activities {
+    width: 20%;
+  }
+  .vieux {
+    border-radius: 23px 23px 0px 0px;
+  }
+  .national {
+    border-radius: 23px 23px 0px 0px;
+  }
+  .medium-container {
+    width: 20%;
+  }
+  .pomegues {
+    border-radius: 23px 23px 0px 0px;
+  }
+  .frioul {
+    border-radius: 23px 23px 0px 0px;
+  }
+  .notre_dame {
+    height: 77%;
+    border-radius: 23px 23px 0px 0px;
+  }
+  .longchamps {
+    height: 77%;
+    border-radius: 23px 23px 0px 0px;
+  }
+  .legende {
+    font-size: 0.7em;
+  }
+  .legende2 {
+    padding: 6px 15px 0px 15px;
     font-size: 0.8em;
   }
-
-  .stars {
-    margin: 36px;
-  }
-
-  .stars1 {
-    margin: 36px;
-  }
-
-  .activities {
-    margin-top: 30px;
-  }
-
-  .activities-container {
-    width: 100%;
-    height: 392px;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0px;
-  }
-  figure {
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-  }
-
-  .big-activities {
-    width: 17%;
-    height: 82%;
-  }
-
-  .vieux {
-    width: 99%;
-    top: 5px;
-    border-radius: 10px 10px 0px 0px;
-  }
-
-  .national {
-    width: 99%;
-    top: 5px;
-    border-radius: 10px 10px 0px 0px;
-  }
-
-  .medium-container {
-    justify-content: flex-start;
-    width: 18%;
-    height: 77%;
-    position: relative;
-    bottom: 15px;
-  }
-
-  .medium-activities {
-    width: 187px;
-    height: 53%;
-  }
-
-  .pomegues {
-    width: 99%;
-    height: 114px;
-    border-radius: 10px 10px 0px 0px;
-  }
-
-  .frioul {
-    width: 99%;
-    height: 80px;
-    margin-top: 48px;
-    border-radius: 10px 10px 0px 0px;
-  }
-
-  .notre_dame {
-    width: 99%;
-    height: 80px;
-    border-radius: 10px 10px 0px 0px;
-  }
-
-  .longchamps {
-    width: 99%;
-    height: 100px;
-    margin-top: 42px;
-    border-radius: 10px 10px 0px 0px;
-  }
-
-  .legende {
-    font-size: 12px;
-    border-radius: 10px 10px 0px 0px;
-  }
-
-  .legende2 {
-    padding: 8px;
-    font-size: 0.9em;
-  }
-
   .footer-container {
     margin-top: 30px;
-    width: 1024px;
   }
-
   h2 {
     font-size: 1em;
   }
-
   .about-us {
     margin-left: 50px;
     width: 33.3%;
   }
-
   .lodgings {
     width: 33.3%;
     margin-left: 50px;
   }
-
   .help {
     width: 33.3%;
   }
 }
-
 @media screen and (max-width: 768px) {
-  #bloc_page {
-    width: auto;
+  .Reservia {
+    width: 13%;
   }
-
-  body {
-    margin: 0px;
+  .title1 {
+    font-size: 1.3em;
   }
-  header,
-  main {
-    width: 728px;
-    margin: 14px 0px 0px 40px;
-  }
-
-  .navlodging {
-    font-size: 0.9em;
-  }
-
-  .navactivities {
-    font-size: 0.9em;
-  }
-
-  .navlogin {
-    font-size: 0.9em;
-  }
-
   .marker {
     margin-left: 0px;
     padding: 12px 20px;
@@ -1120,7 +792,6 @@ footer li {
     font-size: 1.1em;
     padding: 13px 13px 13px 15px;
     width: 170px;
-    min-width: 50px;
   }
   ::placeholder {
     font-size: 0.8em;
@@ -1132,31 +803,28 @@ footer li {
     bottom: 1px;
     right: 10px;
   }
-
   .filters_title {
     font-size: 0.9em;
     margin-left: 4px;
   }
-
   .filters i {
     font-size: 0.8em;
   }
-
   .filters {
     border: 1px solid #f2f2f2;
     margin: 5px;
   }
-
   .filters-text {
     padding: 5px;
     font-size: 0.8em;
   }
-
   h3 {
-    font-size: 0.8em;
+    font-size: 1em;
     margin-left: 4px;
   }
-
+  .lodge {
+    margin: 0px;
+  }
   .lodge i {
     height: 15px;
     width: 15px;
@@ -1165,30 +833,27 @@ footer li {
     padding: 4px 4px 4px 4px;
     margin-left: 0px;
   }
-
   .lodge p {
     font-size: 0.8em;
   }
-
   .container {
-    margin-left: 0px;
-    flex-wrap: wrap-reverse;
-    width: 706px;
+    height: 650px;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
   }
-
-  .lodging-wrapper:nth-child(1) {
+  .container:nth-child(1) {
     order: 2;
   }
-
-  .lodging:nth-child(2) {
+  .container:nth-child(2) {
     order: 1;
   }
 
   .lodging-container {
-    height: 554px;
+    height: 55%;
     width: 90%;
-    margin-left: 4px;
-    margin-top: 30px;
+    margin-top: 3%;
   }
 
   .lodg-title {
@@ -1201,7 +866,7 @@ footer li {
   }
 
   .lodging-wrapper {
-    padding: 10px;
+    height: 75%;
   }
 
   .btn {
@@ -1209,10 +874,10 @@ footer li {
   }
 
   .lodging {
-    width: 35%;
-    height: 129px;
+    width: 20%;
+    height: 40%;
     padding: 3px;
-    margin: 0px 15px 21px 15px;
+    margin: 0px 15px;
     font-size: 0.8em;
   }
 
@@ -1225,144 +890,55 @@ footer li {
   }
 
   .popular-title {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
     font-size: 1em;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
   }
 
   .popular-img {
-    width: 37%;
-    height: 100%;
-    border-radius: 15px 0px 0px 15px;
-    flex-grow: 1;
-    float: left;
-    padding-right: 10px;
+    width: 35%;
   }
 
   .popular-container {
-    background-color: rgb(242, 242, 242);
-    border-radius: 10px;
-    padding: 15px 20px 10px 20px;
     width: 90%;
-    height: 160px;
-    margin-left: 4px;
+    height: 25%;
+    margin-left: 0%;
   }
   .popular-wrapper {
-    display: flex;
     flex-direction: row;
-    flex-grow: 1;
-    align-items: center;
-    justify-content: space-between;
-    height: 76%;
+    justify-content: center;
+    height: 85%;
   }
 
   .popular-article {
     width: 30%;
-    height: 73%;
-    background: white;
-    border-radius: 15px;
-    margin-bottom: 32px;
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
-    font-size: 0.8em;
-  }
-
-  .stars {
-    margin: 6px;
+    height: 65%;
+    margin: 0% 1%;
   }
 
   .stars1 {
-    margin: 6px;
+    margin-top: 10%;
   }
-
   .activities {
     margin-top: 30px;
   }
 
-  .activities-container {
-    width: 92%;
-    height: 392px;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0px;
-  }
-  figure {
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-  }
-
   .big-activities {
     width: 24%;
-    height: 83%;
-  }
-
-  .vieux {
-    width: 99%;
-    top: 5px;
-    border-radius: 10px 10px 0px 0px;
-  }
-
-  .national {
-    width: 99%;
-    top: 5px;
-    border-radius: 10px 10px 0px 0px;
+    height: 98.8%;
   }
 
   .medium-container {
-    justify-content: flex-start;
     width: 24%;
-    height: 77%;
-    position: relative;
-    bottom: 15px;
-  }
-
-  .medium-activities {
-    width: 161px;
-    height: 52%;
-  }
-
-  .pomegues {
-    width: 99%;
-    height: 114px;
-    border-radius: 10px 10px 0px 0px;
-  }
-
-  .frioul {
-    width: 99%;
-    height: 80px;
-    margin-top: 57px;
-    border-radius: 10px 10px 0px 0px;
-  }
-
-  .notre_dame {
-    width: 99%;
-    height: 80px;
-    border-radius: 10px 10px 0px 0px;
-  }
-
-  .longchamps {
-    width: 99%;
-    height: 100px;
-    margin-top: 44px;
-    border-radius: 10px 10px 0px 0px;
-  }
-
-  .legende {
-    font-size: 12px;
-    border-radius: 10px 10px 0px 0px;
   }
 
   .legende2 {
-    padding: 8px;
-    font-size: 0.8em;
+    padding: 6px 10px 0px 10px;
+    font-size: 0.7em;
   }
 
   .footer-container {
     margin-top: 30px;
-    width: 768px;
   }
 
   h2 {
@@ -1386,23 +962,22 @@ footer li {
 }
 
 @media screen and (max-width: 480px) {
-  header,
-  main {
-    margin: 0px;
-    width: 480px;
+  header {
+    display: block;
+    margin: 8% 0% 0% 0%;
+    width: 100%;
   }
 
-  header {
-    font-size: 0.7em;
-    flex-wrap: wrap;
-    height: 133px;
-    width: 267px;
+  main {
+    margin: 0% 2%;
+    width: 96%;
   }
 
   nav {
-    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
+    width: 100%;
   }
 
   nav :nth-child(1) {
@@ -1423,84 +998,88 @@ footer li {
 
   #Reservia {
     display: block;
-    margin-left: 30px;
+    width: 20%;
+    padding: 0% 30% 0% 0%;
   }
 
   .navlodging {
-    font-size: 1.6em;
-    width: auto;
-    padding: 15px 51px 7px 61px;
+    font-size: 1.1em;
+    width: 50%;
     border-bottom: solid 3px #f2f2f2;
-    position: relative;
-    bottom: 17px;
+    text-align: center;
+    padding: 7% 0% 2% 0%;
   }
 
   .navactivities {
-    font-size: 1.6em;
-    width: auto;
-    padding: 18px 88px 7px 86px;
+    font-size: 1.1em;
+    width: 50%;
     border-bottom: solid 3px #f2f2f2;
-    position: relative;
-    left: 236px;
-    bottom: 68px;
     margin-right: 0px;
+    text-align: center;
+    padding: 7% 0% 2% 0%;
   }
 
   .navlogin {
-    font-size: 1.8em;
-    width: 45%;
+    font-size: 1.2em;
+    width: 35%;
     font-weight: bold;
-    position: relative;
-    left: 222px;
-    bottom: 10px;
     margin-right: 0px;
+    padding: 0%;
+    text-align: right;
+    margin-top: 2%;
   }
 
   .navlodging:hover {
-    border-top: solid 2px white;
+    border-top: none;
     border-bottom: solid 3px #0065fc;
   }
 
   .navactivities:hover {
-    border-top: solid 2px white;
+    border-top: none;
     border-bottom: solid 3px #0065fc;
   }
   .marker {
-    margin-left: 22px;
     font-size: 1em;
-    padding: 13px 20px 10px 20px;
+    padding: 10px 20px;
+    display: inline-block;
+    height: 22px;
   }
   #pholder {
-    min-width: 290px;
-    padding-right: 150px;
+    width: 79%;
+    padding: 0px;
+    right: 0px;
+    margin: 0px;
   }
   .searchbtn {
     display: none;
   }
   .searchbar {
-    height: 43px;
+    width: 100%;
+    justify-content: center;
   }
   #magnifying {
     display: inline-block;
     text-decoration: none;
-    padding: 12px 15px 14px 15px;
+    padding: 14px 13px 13px 13px;
     background-color: #0065fc;
     color: white;
-    border: none;
-    width: 17px;
-    min-width: 17px;
     font-size: 15px;
-    border-radius: 12px;
-    position: relative;
-    right: 0px;
-    left: 353px;
-    bottom: 42px;
+    border-radius: 0px 12px 12px 0px;
+  }
+
+  ::placeholder {
+    text-align: left;
+    padding-left: 3%;
+    font-weight: bold;
   }
   .title1 {
     font-size: 1.5em;
-    margin-left: 20px;
-    margin-top: 0px;
-    width: 460px;
+    margin-top: 5%;
+    width: 100%;
+  }
+  h3 {
+    font-size: 1em;
+    width: 100%;
   }
 
   .filters_title {
@@ -1512,7 +1091,7 @@ footer li {
 
   .filters_container {
     flex-wrap: wrap;
-    width: 381px;
+    width: 70%;
   }
 
   .filters i {
@@ -1525,11 +1104,10 @@ footer li {
     border-color: #f2f2f2;
     font-size: 1.2em;
     font-weight: bold;
-    margin-left: 20px;
+    margin: 2%;
   }
-
-  .filters-text {
-    padding: 20px;
+  .fam {
+    margin-left: 3%;
   }
 
   #child {
@@ -1539,13 +1117,8 @@ footer li {
     font-size: 1em;
   }
 
-  h3 {
-    font-size: 1em;
-    margin-left: 21px;
-    width: 459px;
-  }
   .lodge {
-    width: 465px;
+    width: 100%;
   }
   .lodge i {
     margin-left: 15px;
@@ -1557,13 +1130,13 @@ footer li {
     font-size: 0.9em;
   }
 
-  .container {
-    margin-left: 0px;
-    flex-wrap: wrap-reverse;
-    width: 480px;
-  }
   .lodg-title {
-    margin-left: 20px;
+    margin-left: 4%;
+  }
+
+  .container {
+    width: 100%;
+    height: auto;
   }
   .lodging-wrapper:nth-child(1) {
     order: 2;
@@ -1575,29 +1148,29 @@ footer li {
 
   .lodging-container {
     padding: 0px;
-    height: 400px;
+    height: auto;
     background-color: white;
-    margin-bottom: 750px;
     margin-top: 0px;
+    width: 100%;
   }
 
   .lodging-wrapper {
     flex-direction: column;
-    padding: 10px;
+    padding: 0px;
   }
 
   .btn {
     font-weight: bold;
     font-size: 0.9em;
-    margin-left: 60px;
+    margin-left: 2%;
   }
 
   .lodging {
-    width: 86%;
+    width: 90%;
     height: 150px;
-    margin-left: 45px;
     border: 2px solid #f2f2f2;
     box-shadow: 0px 3px 3px #f2f2f2;
+    margin-bottom: 3%;
   }
 
   .lodging:hover {
@@ -1608,114 +1181,111 @@ footer li {
     width: 100%;
     height: 93px;
   }
+  .legende {
+    font-size: 1em;
+    padding: 2% 3% 3% 3%;
+  }
 
   .popular-title {
     width: 90%;
-    margin-left: 20px;
+    margin: 5% 0% 5% 4%;
   }
 
   .popular-img {
     width: 32%;
-    height: 103px;
+    height: 100px;
   }
 
   .popular-container {
-    height: 445px;
+    height: auto;
     width: 100%;
     margin-left: 0px;
     padding: 0px;
   }
   .popular-wrapper {
-    display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    align-items: center;
-    justify-content: space-between;
   }
 
   .popular-article {
-    width: 75%;
+    width: 90%;
     height: 31%;
+    margin: 0% 1% 2%;
   }
 
   .stars {
-    margin: 40px;
+    margin-top: 5%;
   }
 
   .stars1 {
-    margin: 40px;
+    margin-top: 5%;
   }
 
   .activities {
     margin-top: 60px;
-    margin-left: 25px;
   }
 
   .activities-container {
-    width: 480px;
     height: auto;
-    flex-wrap: nowrap;
-    margin: 0px;
-    flex-direction: column;
-    margin-bottom: 50px;
+    width: 100%;
+    margin-bottom: 5%;
   }
-
+  .activities-wrapper {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .act {
+    margin: 0%;
+  }
   .big-activities {
-    width: 75%;
-    height: 8em;
-    margin-bottom: 60px;
+    width: 89%;
+    margin-bottom: 3%;
   }
 
   .vieux {
     width: 100%;
     height: 110px;
-    top: 4px;
   }
 
   .national {
     width: 100%;
     height: 110px;
-    top: 4px;
   }
 
   .medium-container {
     align-items: center;
-    width: 100%;
-    top: 0px;
+    width: 90%;
+  }
+  .medium-wrapper {
+    justify-content: center;
   }
 
   .medium-activities {
-    width: 75%;
-    height: 8em;
-    margin-bottom: 60px;
+    width: 99%;
+    margin-bottom: 3%;
   }
 
   .pomegues {
     width: 100%;
     height: 110px;
     margin-top: 0px;
-    top: 4px;
   }
 
   .frioul {
     width: 100%;
     height: 110px;
     margin-top: 0px;
-    top: 4px;
   }
 
   .notre_dame {
     width: 100%;
     height: 110px;
     margin-top: 0px;
-    top: 4px;
   }
 
   .longchamps {
     width: 100%;
     height: 110px;
     margin-top: 0px;
-    top: 4px;
   }
 
   .legende2 {
@@ -1723,15 +1293,10 @@ footer li {
     width: 95%;
   }
 
-  footer {
-    margin-right: 0px;
-  }
-
   .footer-container {
     margin-top: 0px;
     font-size: 1.1em;
     flex-direction: column;
-    width: 480px;
   }
 
   footer ul {
@@ -1756,259 +1321,7 @@ footer li {
   }
 }
 @media screen and (max-width: 375px) {
-  body {
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-  }
-  body,
-  html {
-    height: 100vh;
-  }
-
-  header,
-  main {
-    width: 296px;
-  }
-
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-
-  nav :nth-child(1) {
-    order: 1;
-  }
-  nav :nth-child(2) {
-    order: 3;
-  }
-  nav :nth-child(3) {
-    order: 4;
-  }
-  nav :nth-child(4) {
-    order: 2;
-  }
-  .Reservia {
-    display: none;
-  }
-
-  #Reservia {
-    display: block;
-    margin-left: 22px;
-  }
-
-  .navlodging {
-    font-size: 1.4em;
-    width: 37%;
-    padding: 15px 39px 7px 40px;
-    border-bottom: solid 3px #f2f2f2;
-    position: relative;
-    bottom: 6px;
-  }
-
-  .navactivities {
-    font-size: 1.4em;
-    width: 29%;
-    padding: 20px 60px 7px 49px;
-    border-bottom: solid 3px #f2f2f2;
-    position: relative;
-    left: 180px;
-    bottom: 57px;
-    margin-right: 0px;
-  }
-
-  .navlogin {
-    font-size: 1.5em;
-    width: 25%;
-    font-weight: bold;
-    position: relative;
-    left: 140px;
-    bottom: 0px;
-    margin-right: 0px;
-  }
-  .navlodging:hover {
-    border-top: solid 2px white;
-    border-bottom: solid 3px #0065fc;
-  }
-  .navactivities:hover {
-    border-top: solid 2px white;
-    border-bottom: solid 3px #0065fc;
-  }
-  ::placeholder {
-    font-size: 0.9em;
-  }
-  #pholder {
-    font-size: 1em;
-    min-width: 240px;
-    padding-right: 100px;
-  }
-  .marker {
-    padding: 12px 20px 11px 20px;
-  }
-
-  #magnifying {
-    padding: 14px 15px;
-    left: -16px;
-    bottom: 0px;
-  }
-
-  .title1 {
-    font-size: 1.3em;
-    width: 277px;
-  }
-
-  h3 {
-    font-size: 1em;
-    margin-left: 21px;
-    width: 303px;
-  }
-  .searchbar {
-    width: 375px;
-  }
-
   .filters_container {
-    width: 321px;
-  }
-  .filters-text {
-    padding: 5px;
-  }
-
-  .lodge {
-    width: 360px;
-  }
-  .lodge i {
-    margin-left: 15px;
-  }
-
-  .lodge p {
-    margin-left: 9px;
-    font-weight: 100;
-    font-size: 0.9em;
-  }
-  .container {
-    width: 375px;
-  }
-  .lodging-container {
-    width: 375px;
-  }
-  .lodging-wrapper {
-    height: auto;
-    margin-bottom: 40px;
-  }
-  .lodging {
-    width: 93%;
-    height: 150px;
-    margin-left: 6px;
-    border: 2px solid #f2f2f2;
-    box-shadow: 0px 3px 3px #f2f2f2;
-  }
-  .popular-container {
-    width: 375px;
-    margin: 0px;
-  }
-  .popular-wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .popular-title {
-    width: 90%;
-    margin-left: 20px;
-  }
-  .popular-article {
-    height: 31%;
-  }
-  .popular-img {
-    height: 105px;
-  }
-  .btn {
-    font-size: 0.9em;
-    position: relative;
-    bottom: 57px;
-    margin-left: 20px;
-  }
-  .stars1 {
-    margin: 33px;
-  }
-
-  .stars {
-    margin: 47px;
-  }
-
-  .activities {
-    margin-top: 60px;
-    margin-left: 25px;
-  }
-  .activities-container {
-    width: 375px;
-  }
-
-  .big-activities {
-    width: 87%;
-    height: 8em;
-    margin-bottom: 60px;
-  }
-
-  .vieux {
-    width: 100%;
-    height: 110px;
-    top: 4px;
-  }
-
-  .national {
-    width: 100%;
-    height: 110px;
-    top: 4px;
-  }
-
-  .medium-container {
-    align-items: center;
-    width: 100%;
-    top: 0px;
-  }
-
-  .medium-activities {
-    width: 87%;
-    height: 8em;
-    margin-bottom: 60px;
-  }
-
-  .pomegues {
-    width: 100%;
-    height: 110px;
-    margin-top: 0px;
-    top: 4px;
-  }
-
-  .frioul {
-    width: 100%;
-    height: 110px;
-    margin-top: 0px;
-    top: 4px;
-  }
-
-  .notre_dame {
-    width: 100%;
-    height: 110px;
-    margin-top: 0px;
-    top: 4px;
-  }
-
-  .longchamps {
-    width: 100%;
-    height: 110px;
-    margin-top: 0px;
-    top: 4px;
-  }
-
-  .legende2 {
-    width: 95%;
-  }
-  .footer-container {
-    width: 375px;
+    width: 83%;
   }
 }
