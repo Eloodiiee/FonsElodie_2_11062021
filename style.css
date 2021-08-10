@@ -13,8 +13,8 @@ header {
 }
 header,
 main {
-  margin: 0% 2%; /*marge sur les côtés*/
-  width: 96%;
+  margin: 0% 3%; /*marge sur les côtés*/
+  width: 94%;
 }
 body {
   font-family: "Raleway-Regular", "Verdana, sans-serif"; /* utilisation des polices sur la totalité de la page */
