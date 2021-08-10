@@ -976,7 +976,7 @@ footer li {
     justify-content: center;
     width: 100%;
   }
-
+  /*it allows to reorganize the nav bar as we want*/
   nav :nth-child(1) {
     order: 1;
   }
