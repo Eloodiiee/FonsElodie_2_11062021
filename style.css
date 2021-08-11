@@ -79,6 +79,7 @@ nav {
 /* Filters section*/
 .filters_container {
   display: flex;
+  flex-wrap: wrap;
 }
 .filters_title {
   margin-top: 22px;
@@ -601,6 +602,26 @@ footer li {
     width: 33.3%;
   }
 }
+@media screen and (max-width: 1355px) {
+  .legende {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1189px) {
+  .legende {
+    font-size: 0.8em;
+  }
+  .stars1 {
+    margin-top: 10%;
+  }
+}
+@media screen and (max-width: 1093px) {
+  .stars1 {
+    margin-top: 0%;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .title1 {
     font-size: 1.3em;
@@ -640,6 +661,7 @@ footer li {
     left: -10px;
     bottom: 1px;
     right: 10px;
+    font-size: 1em;
   }
   .filters_title {
     font-size: 0.9em;
@@ -706,11 +728,12 @@ footer li {
     height: 89px;
     width: 97%;
   }
+
   .star {
     margin-top: 0%;
   }
   .stars {
-    margin-top: 10%;
+    margin-top: 18%;
   }
   .stars1 {
     margin-top: 10%;
@@ -745,14 +768,15 @@ footer li {
     border-radius: 23px 23px 0px 0px;
   }
   .legende {
-    font-size: 0.7em;
+    font-size: 10px;
   }
   .legende2 {
     padding: 6px 15px 0px 15px;
-    font-size: 0.8em;
+    font-size: 10px;
   }
   .footer-container {
     margin-top: 30px;
+    font-size: 0.9em;
   }
   h2 {
     font-size: 1em;
@@ -770,6 +794,10 @@ footer li {
   }
 }
 @media screen and (max-width: 768px) {
+  .navactivities {
+    margin: 0% 6%;
+  }
+
   .Reservia {
     width: 13%;
   }
@@ -797,7 +825,7 @@ footer li {
     right: 10px;
   }
   .filters_title {
-    font-size: 0.9em;
+    font-size: 0.8em;
     margin-left: 4px;
   }
   .filters i {
@@ -806,10 +834,11 @@ footer li {
   .filters {
     border: 1px solid #f2f2f2;
     margin: 5px;
+    padding: 0px;
   }
   .filters-text {
-    padding: 5px;
-    font-size: 0.8em;
+    padding: 4px;
+    font-size: 0.7em;
   }
   h3 {
     font-size: 1em;
@@ -845,7 +874,7 @@ footer li {
 
   .lodging-container {
     height: 55%;
-    width: 90%;
+    width: 95%;
     margin-top: 3%;
   }
 
@@ -859,7 +888,8 @@ footer li {
   }
 
   .lodging-wrapper {
-    height: 75%;
+    height: 82%;
+    padding: 0px;
   }
 
   .btn {
@@ -867,7 +897,7 @@ footer li {
   }
 
   .lodging {
-    width: 20%;
+    width: 25%;
     height: 40%;
     padding: 3px;
     margin: 0px 15px;
@@ -889,11 +919,11 @@ footer li {
   }
 
   .popular-img {
-    width: 35%;
+    width: 40%;
   }
 
   .popular-container {
-    width: 90%;
+    width: 95%;
     height: 25%;
     margin-left: 0%;
   }
@@ -904,7 +934,7 @@ footer li {
   }
 
   .popular-article {
-    width: 30%;
+    width: 31%;
     height: 65%;
     margin: 0% 1%;
   }
@@ -912,26 +942,51 @@ footer li {
   .stars1 {
     margin-top: 10%;
   }
+  .activities-container {
+    height: 305px;
+  }
   .activities {
-    margin-top: 30px;
+    margin-top: 10px;
   }
 
   .big-activities {
-    width: 24%;
+    width: 20%;
     height: 98.8%;
+    border-radius: 15px;
   }
 
   .medium-container {
-    width: 24%;
+    width: 23%;
   }
-
+  .medium-activities {
+    border-radius: 15px;
+  }
   .legende2 {
-    padding: 6px 10px 0px 10px;
-    font-size: 0.7em;
+    padding: 4px 7px 0px 7px;
+    font-size: 10px;
+  }
+  .vieux {
+    border-radius: 13px 13px 0px 0px;
+  }
+  .national {
+    border-radius: 13px 13px 0px 0px;
   }
 
+  .pomegues {
+    border-radius: 13px 13px 0px 0px;
+  }
+  .frioul {
+    border-radius: 13px 13px 0px 0px;
+  }
+  .notre_dame {
+    border-radius: 13px 13px 0px 0px;
+  }
+  .longchamps {
+    border-radius: 13px 13px 0px 0px;
+  }
   .footer-container {
     margin-top: 30px;
+    font-size: 0.8em;
   }
 
   h2 {
@@ -953,7 +1008,53 @@ footer li {
     margin-left: 32px;
   }
 }
-
+@media only screen and (min-device-width: 494px) and (max-device-width: 653px) {
+  nav {
+    width: 39%;
+  }
+  .navlodging {
+    font-size: 0.7em;
+  }
+  .navactivities {
+    font-size: 0.7em;
+  }
+  .navlogin {
+    font-size: 0.7em;
+  }
+  .title1 {
+    font-size: 1.1em;
+  }
+  .filters {
+    font-size: 0.8em;
+  }
+  .filters i {
+    font-size: 0.6em;
+  }
+  .searchbtn {
+    font-size: 1em;
+  }
+  .medium-container {
+    width: 24%;
+  }
+  .legende {
+    font-size: 10px;
+  }
+  .legende2 {
+    padding: 4px 1px 0px 4px;
+    font-size: 9px;
+  }
+  .stars1 {
+    margin-top: 11%;
+  }
+}
+@media screen and (max-width: 493px) {
+  .legende {
+    font-size: 9px;
+  }
+  .stars1 {
+    margin-top: 6%;
+  }
+}
 @media screen and (max-width: 480px) {
   header {
     display: block;
@@ -1007,7 +1108,7 @@ footer li {
     font-size: 1.1em;
     width: 50%;
     border-bottom: solid 3px #f2f2f2;
-    margin-right: 0px;
+    margin: 0px;
     text-align: center;
     padding: 7% 0% 2% 0%;
   }
@@ -1094,9 +1195,9 @@ footer li {
   .filters {
     border: 2px solid;
     border-color: #f2f2f2;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: bold;
-    margin: 2%;
+    margin: 1%;
   }
   .fam {
     margin-left: 3%;
@@ -1198,11 +1299,11 @@ footer li {
   }
 
   .stars {
-    margin-top: 10%;
+    margin-top: 8%;
   }
 
   .stars1 {
-    margin-top: 5%;
+    margin-top: 3%;
   }
 
   .activities {
@@ -1305,5 +1406,25 @@ footer li {
 @media screen and (max-width: 375px) {
   .filters_container {
     width: 83%;
+  }
+  .filters-text {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 276px) {
+  .legende {
+    font-size: 0.8em;
+  }
+  .stars {
+    margin-top: 15%;
+  }
+  .stars1 {
+    margin-top: 10%;
+  }
+}
+@media only screen and (min-device-width: 150px) and (max-device-width: 225px) {
+  .filters {
+    font-size: 1em;
   }
 }
